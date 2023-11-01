@@ -3,19 +3,20 @@
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: rgb(133, 211, 158);
-    text-align: center;
     padding: 5px 10px 5px;
     width: 500px;
     border-radius: 10px;
+    color: #222222;
+    background-color: #628A4C;
+    text-align: center;
 }
 
 #carouselExampleCaptions {
-    width: 80%;
-    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    width: 80%;
+    max-width: 1000px;
+    height: 0 auto;
 }
 
 .carousel-item {
@@ -23,35 +24,43 @@
     margin-bottom: auto;
 }
 
+.carousel-item > img {
+    height: 500px;
+    border-radius: 10px;
+}
+
 .carousel-caption > h5 {
-    background-color:rgba(65, 75, 178);
+    padding: 5px;
+    background-color:#76993D;
     border-radius: 5px;
-    padding: 4px;
-    color: white;
+    color: #111111;
 }
 
 .carousel-caption > p {
-    background-color: rgba(133, 211, 158, 0.9);
+    padding: 10px;
     border-radius: 5px;
-    color: black;
+    background-color: #E0F2B6;
+    color: #222222;
     font-weight:500;
-    padding: 5px;
 }
 
 .cards_transparencia {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: auto;
 }
 
 .card-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 250px;
     margin: 25px;
-    border-radius: 10px;
-    background-color: rgba(143, 209, 79, 0.4);
+    width: 250px;
+    border: solid 1mm rgb(255, 255, 255);
+    border-radius: 40px 0 40px 0;
+    background-color: #E0F2B6;
+
 }
 
 .card-item > img {
@@ -60,16 +69,16 @@
 }
 
 .card-item-legenda {
-    text-align: center;
-    color: rgb(43, 43, 168);
     padding: 5px 0;
-    border-radius: 0 0 5px 5px;
     width: 250px;
-    background-color: rgb(152, 152, 225);
+    border-radius: 0 0 40px 0;
+    background-color: #628A4C;
+    color: rgb(239, 250, 239);
+    text-align: center;
 }
 
 .card-item:hover {
     transition-duration: 0.3s;
-    scale: 1.05;
-    border: solid rgba(65, 75, 178);
+    scale: 1.1;
+    border: solid #628A4C;
 }
