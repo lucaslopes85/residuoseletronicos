@@ -1,0 +1,141 @@
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+}
+
+/* SELETORES */
+header {
+    float: left;
+    width: 15%;
+}
+
+nav {
+    float: left;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    float: left;
+    margin: 10px 50px auto 50px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+section {
+
+}
+
+main {
+    height: 70%;
+    width: 85%;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+
+/* CLASSES */
+.cabecalho{
+    height: 60px;
+    border: 1px solid red;
+}
+
+.logo {
+}
+
+.login {
+    width: 5%;
+    float: right;
+}
+
+.box-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(133, 211, 158);
+    text-align: center;
+    padding: 5px 10px 5px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+/* --Início carrossel-- */
+.carousel-item {
+    margin-top: auto; 
+    margin-bottom: auto;
+}
+
+.carousel-caption > h5 {
+    background-color:rgba(65, 75, 178);
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+}
+
+.carousel-caption > p {
+    background-color: rgba(133, 211, 158, 0.9);
+    border-radius: 5px;
+    color: black;
+    font-weight:500;
+    padding: 5px;
+}
+
+.cards_transparencia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    margin: 25px;
+    border-radius: 10px;
+    background-color: rgba(143, 209, 79, 0.4);
+}
+
+.card-item > img {
+    margin: 10px 0;
+    width: 50px;
+}
+
+.card-item-legenda {
+    text-align: center;
+    color: rgb(43, 43, 168);
+    padding: 5px 0;
+    border-radius: 0 0 5px 5px;
+    width: 250px;
+    background-color: rgb(152, 152, 225);
+}
+
+.card-item:hover {
+    transition-duration: 0.3s;
+    scale: 1.05;
+    border: solid rgba(65, 75, 178);
+}
+/* --Fim carrossel-- */
+
+
+/* IDS */
+#carouselExampleCaptions {
+    width: 80%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
