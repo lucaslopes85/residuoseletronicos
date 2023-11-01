@@ -32,10 +32,6 @@ nav ul li a {
     background-color: #dddddd;
   }
 
-section {
-
-}
-
 main {
     height: 70%;
     width: 85%;
@@ -50,9 +46,6 @@ main {
 .cabecalho{
     height: 60px;
     border: 1px solid red;
-}
-
-.logo {
 }
 
 .login {
