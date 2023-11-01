@@ -59,6 +59,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    margin-top: 30px;
     padding: 5px 10px 5px;
     width: 500px;
     border-radius: 10px;
@@ -102,7 +103,7 @@ main {
     font-weight:500;
 }
 
-/*Cards com links*/
+/*Portal de Transparência*/
 
 .cards_transparencia {
     display: flex;
@@ -111,7 +112,7 @@ main {
     padding-bottom: auto;
 }
 
-.card-item {
+.card-item-transparencia {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,15 +121,14 @@ main {
     border: solid 1mm rgb(255, 255, 255);
     border-radius: 40px 0 40px 0;
     background-color: #E0F2B6;
-
 }
 
-.card-item > img {
+.card-item-transparencia > img {
     margin: 10px 0;
     width: 50px;
 }
 
-.card-item-legenda {
+.card-item-transparencia-legenda {
     padding: 5px 0;
     width: 250px;
     border-radius: 0 0 40px 0;
@@ -137,29 +137,49 @@ main {
     text-align: center;
 }
 
-.card-item:hover {
+.card-item-transparencia:hover {
     transition-duration: 0.3s;
     scale: 1.1;
     border: solid #628A4C;
 }
 
-
-
-
-
-
+/*Legislação e contratos*/
 
 .container-legislacao {
-    margin: 50px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    align-content: flex-start;
 }
 
-.container-legislacao > h5 {
-
-    color:#425f32;
-
-}
 .separador {
+    margin: 10px 25px 10px;    
     background-color: #425f32;
-    height: 2px;
+    height: 4px;
+}
+.container-main-legislacao > h4 {
+    color:#425f32;
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+.card-item-legislacao {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    text-align: center;
+    background-color: #E0F2B6;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    border-radius: 40px 0 40px 0;
+}
+
+.card-item-legislacao-titulo {
+    background-color: #425f32;
+    padding: 15px;
+    width: 300px;
+    border-radius: 40px 0 0 0;
+    color: rgb(239, 250, 239);
+    margin-bottom: 25px;
 }
