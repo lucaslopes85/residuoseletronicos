@@ -239,12 +239,8 @@ main {
 /* Perfil Munícipe */
 
 .container-municipe {
-    display: grid;
-    grid-template-areas: 
-        "header header header header"
-        "container container container container"
-        "footer footer footer footer";
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-perfil-municipe { 
@@ -252,14 +248,86 @@ main {
     grid-area: "container";
     grid-template-areas: 
         "aside main main main";
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30vw 70vw;
+}
+
+.foto-usuario {
+    background-color: #425f32;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.foto-usuario > img {
+    display: block;
+    background-color: #425f32;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;;
+}
+
+.foto-usuario > h3 {
+    background-color: #425f32;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    height: 30px; 
+    color: #effaef;
+    margin-top: 15px;
+}
+
+.card-pontuacao {
+    background-color:#76993D;
+    border-radius: 40px 0 40px 0;
+    margin: 15px;
+    padding: 10px;
+}
+
+.card-pontuacao > h4, h2 {
+    text-align: center;
+    display: flex;
+    background-color:#76993D;
+    justify-content: center;
+    color: #effaef;
+    border-radius: 40px 0 40px 0;
+}
+
+.botao-extrato-pontos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;    
+    max-width: 180px;
+    padding: 5px;
+    border: 2px solid #76993D;
+    border-radius: 5px;
+}
+
+.botao-troca-pontos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px auto;    
+    max-width: 180px;
+    padding: 8px;
+    background-color: #425f32;
+    border-radius: 5px;
+}
+
+.botao-troca-pontos > p {
+    background-color: #425f32;
+    color: #effaef;
+
+}
+
+.botao-troca-pontos > img {
+    background-color: #425f32;
 }
 
 .menu-lateral {
     background-color: grey;
     border: 1px solid red;
     margin: 10px;
-    width: 350px;
+    width: auto;
 
 }
 
@@ -267,6 +335,6 @@ main {
     background-color: grey;
     border: 1px solid red;
     margin: 10px;
-    width: 700px;
+    width: auto;
 
 }
