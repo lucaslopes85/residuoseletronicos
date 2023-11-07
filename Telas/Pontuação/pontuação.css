@@ -1,0 +1,72 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    margin-left: 0px;
+    gap: 1rem;
+    
+    .cards-pontuacao {
+        text-align: center;
+        font-family: arial;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        padding: 8px;
+        color: white;
+        background-color: #3c68c7;
+        border-radius: 5px;
+    }
+    .cards-login {
+        text-align: center;
+        font-family: arial;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        padding: 8px;
+        color: white;
+        background-color: #2ab385;
+        border-radius: 5px;
+    }
+    .cards-extrato {
+        text-align: center;
+        font-size: 12px;
+        font-family: arial;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        padding: 6px;
+        color: white;
+        background-color: #2ab385;
+        border-radius: 5px;
+    }
+    .cards-dados {
+        text-align: center;
+        font-size: 12px;
+        font-family: arial;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        padding: 6px;
+        color: white;
+        background-color: #2ab385;
+        border-radius: 5px;
+    }
+    .cards-duvidas {
+        text-align: center;
+        font-size: 12px;
+        font-family: arial;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        padding: 6px;
+        color: white;
+        background-color: #2ab385;
+        border-radius: 5px;
+    }
+
+}
