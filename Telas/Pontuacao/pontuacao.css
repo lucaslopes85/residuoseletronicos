@@ -1,0 +1,76 @@
+.container-perfil-municipe { 
+display: grid;
+grid-area: "container";
+grid-template-areas: 
+    "aside main main main";
+justify-content: left;
+margin: 25px;
+gap: 15rem;
+}
+
+.container-agendamentos {
+border: 1px solid red;
+}
+
+.foto-usuario {
+    display: flex;
+    align-items: center;
+    background-color: #425f32;
+    border-radius: 30px;
+    max-height: 150px;
+    max-width: 250px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.foto-usuario > h3 {
+    background-color: #425f32;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    height: 30px; 
+    color: #effaef;
+    margin-top: 15px;
+}
+
+.foto-usuario > img {
+    display: block;
+    background-color: #425f32;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;;
+}
+
+.container-pontuacao {
+    align-items: center;
+    height: auto;
+    width: 350px;
+    margin-top: 25px;
+}
+
+.pontos,
+.troca,
+.extrato {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #76993D;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    gap: 2rem;
+    font-size: large;
+}
+
+.container-blocos-itens {
+    display: inline-block;
+    align-items: center;
+    height: auto;
+    width: 350px;
+    margin-top: 25px;
+}
+.blocos-itens {
+    display: inline-block;
+    align-items: flex-start;
+    justify-content: center;
+}
