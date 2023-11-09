@@ -87,16 +87,16 @@ main {
     color: #222222;
     background-color: #f0f8f0;
     text-align: center;
+    display: block;
 }
 
 .box-title > h1 {
     background-color: #425f32;
-    width: 500px;
-    height: 60px;
+    max-width: 500px;
+    min-height: 60px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    margin-top: 30px;
     border-radius: 10px;
     color: #effaef;
 
@@ -458,5 +458,33 @@ main {
 }    
 
 
+/* Benefícios Concedidos */
 
+.container-beneficios-concedidos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.introducao-pagina {
+    margin: 10px 25px 25px 25px;
+    text-align: left;
+    color: #111111;
+}
+.botoes-superiores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dropdown {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 35px 0 35px;
+
+}
+
+.dropdown > button {
+    background-color: #425f32;
+}
 

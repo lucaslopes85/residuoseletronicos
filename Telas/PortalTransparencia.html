@@ -10,6 +10,25 @@
 </head>
 <body>
 
+<header>
+    <a href="Index.html">
+        <img class="cabecalho" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
+    </a>
+</header>
+
+<nav>
+    <ul class="cabecalho">
+        <li><a href="Index.html">Início</a></li>
+        <li><a href="TodasNoticias.html">Notícias</a></li>
+        <li><a href="#">Agendamento</a></li>
+        <li><a href="PortalTransparencia.html">Portal de Transparência</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>
+
+<section class=" login">
+    <img class="cabecalho" src="../img/LayoutPadrao/imagem-usuario.png">
+</section>
 <!-- Cabeçalho -->
 <!-- 
   <header>
@@ -38,7 +57,7 @@
 
 <!-- Topo da página-->
 
-
+<main>
       <div class=box-title>
           <h1>Portal de Transparência</h1>
       </div>
@@ -88,15 +107,23 @@
 <!-- Links para outras páginas do Portal da Transparência -->
       <section class="cards">
         <div class="cards_transparencia">
-          <a href="#" target="_blank" style="text-decoration: none; color: inherit;" onclick = AlertaIndisponibilidade()>
+          <a href="/Telas/ColetasRealizadas.html" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="card-item-transparencia">
               <img src="/icons/icone_caminhao.png" alt="">
               <div class="card-item-transparencia-legenda">
-                  <h6>Coletas e doações realizadas</h6>
+                  <h6>Coletas realizadas</h6>
               </div>
           </div>
         </a>
-        <a href="#" target="_blank" style="text-decoration: none; color: inherit;" onclick = AlertaIndisponibilidade()>
+        <a href="/Telas/DoaçõesRealizadas.html" target="_blank" style="text-decoration: none; color: inherit;">
+          <div class="card-item-transparencia">
+            <img src="/icons/icone_presente.png" alt="">
+            <div class="card-item-transparencia-legenda">
+                <h6>Doações realizadas</h6>
+            </div>
+        </div>
+      </a>
+        <a href="/Telas/BenefíciosConcedidos.html" target="_blank" style="text-decoration: none; color: inherit;">
           <div class="card-item-transparencia">
               <img src="/icons/icone_mao.png" alt="">
               <div class="card-item-transparencia-legenda">
@@ -122,7 +149,15 @@
           </a>
         </div>
       </section>
+    </main>
 
+    <footer id="rodape">
+        <img class="prefeitura-logo" src="../img/LayoutPadrao/PrefeituraBH.png" alt="Prefeitura de BH">
+        <div class="redes-sociais">
+            Imagens das redes sociais
+        </div>
+        <img class="fale-conosco" src="../img/LayoutPadrao/fale-conosco.png" alt="Fale Conosco">
+    </footer>
 
 <script src="/Script/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
