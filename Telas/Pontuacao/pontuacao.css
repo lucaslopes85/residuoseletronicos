@@ -64,13 +64,33 @@ border: 1px solid red;
 
 .container-blocos-itens {
     display: inline-block;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     height: auto;
     width: 350px;
-    margin-top: 25px;
+    margin-top: 80px;
 }
+
 .blocos-itens {
-    display: inline-block;
-    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    font-size: larger;
+    max-height: 250px;
+    max-width: 150px;
+}
+
+.celular,
+.tablet,
+.notebook,
+.computador {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f2b6;
+    font-size: larger;
+    border-radius: 5px;
 }
