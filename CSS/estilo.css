@@ -59,6 +59,8 @@ main {
 }
 
 #rodape {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     height: 100px;
     background-color: #bff090;
@@ -80,7 +82,35 @@ main {
     margin: auto 40px;
     float: right;
 }
+
+#rodape .links-redes-sociais {
+    border: 1px solid red;
+    
+    margin: 10px auto;
+    height: 100px;
+}
 /* FIM LAYOUT PADRÃO */
+
+/* TELA PRINCIPAL */
+.conteudo-principal {
+    border: 1px solid red;
+    height: 360px;
+}
+
+.noticias-resumidas {
+    float: left;
+    border: 1px solid red;
+    width: 40%;
+    height: 100%;
+}
+
+.mapa {
+    float: right;
+    border: 1px solid red;
+    width: 55%;
+    height: 100%;
+}
+/* FIM TELA PRINCIPAL */
 
 .box-title {
     padding: 5px 10px 5px;
