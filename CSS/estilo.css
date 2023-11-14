@@ -73,7 +73,7 @@ main {
 #rodape div {
     display: inline;
     clear: both;
-    margin: auto 40px;
+    margin: auto 350px;
     width: 100%;
 }
 
@@ -85,7 +85,6 @@ main {
 
 #rodape .links-redes-sociais {
     border: 1px solid red;
-    
     margin: 10px auto;
     height: 100px;
 }
