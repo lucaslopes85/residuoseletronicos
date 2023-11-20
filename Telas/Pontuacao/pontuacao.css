@@ -65,6 +65,7 @@ main {
 
 #rodape .prefeitura-logo {
     width: 300px;
+    height: 90px;
     float: left;
 }
 
@@ -82,9 +83,9 @@ main {
 }
 /* FIM LAYOUT PADRÃO */
 
-
 .foto-usuario {
     display: flex;
+    justify-content: left;
     width: 250px;
     height: auto;
     background-color: #425f32;
@@ -109,57 +110,71 @@ main {
     margin: 0 auto;;
 }
 
-.container-pontuacao {
-    align-items: center;
-    height: auto;
-    width: 350px;
-    margin-top: 25px;
+.cards-pontos {
+    display: center;
+    align-self: center;
+    justify-items: center;
+    margin-left: 40%;
+}
+
+.pontos > h1, 
+.troca > h2,
+.extrato > h3 {
+    background-color: #425f32;
+    margin: 0 auto;
+}
+
+.troca > img,
+.extrato > img {
+    background-color: #425f32;
+    margin: 0 15px 0 10px;
 }
 
 .pontos,
 .troca,
 .extrato {
-    display: flex;
+    display: center;
     align-self: center;
     justify-content: center;
-    align-items: center;
-    background-color: #76993D;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
-    gap: 2rem;
-    font-size: large;
-}
-
-.container-blocos-itens {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+    color: black;
     width: 350px;
-    margin-top: 80px;
+    height: auto;
+    background-color: #425f32;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
 }
 
-.blocos-itens {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    font-size: larger;
-    max-height: 250px;
-    max-width: 150px;
+.cards-figuras {
+    display: center;
+    align-self: center;
+    justify-items: center;
+    margin-left: 18%;
 }
 
 .celular,
 .tablet,
 .notebook,
 .computador {
-    display: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0f2b6;
-    font-size: larger;
-    border-radius: 5px;
+    display: inline-block;
+    align-self: center;
+    padding: 60px;
+    font-size: large;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #76993D;
+    margin-right: 12px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.celular > h1, p,
+.tablet > h1, p,
+.notebook > h1, p,
+.computador > h1, p {
+    background-color: #76993D;
+    padding: 5px;
 }
