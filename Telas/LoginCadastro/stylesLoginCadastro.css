@@ -1,0 +1,185 @@
+/* FORMATAÇÃO PADRÃO */
+*{
+    margin: 0;
+    padding: 0;
+               
+}
+a{
+    text-decoration: none;
+    color: black
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
+    width: 15%;
+}
+
+.cabecalho{
+    height: 60px;
+}
+
+nav {
+    float: left;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin: 10px 30px 10px 30px;
+    
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    color: #222222;
+    text-decoration: none;
+    font-size: 1.02em;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+    border-bottom: 3px solid #8bd218;
+}
+
+.login {
+    width: 5%;
+    float: right;
+}
+
+main {
+    clear: both;
+    padding: 30px;
+}
+
+.rodape {
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #bff090;
+    margin-top: auto;
+    position: fixed; /* Altere para position: fixed */
+    bottom: 0; /* Posicione o rodapé no fundo */
+    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
+}
+.prefeitura-logo {
+    width: 20rem;
+}
+
+
+.fale-conosco {
+    width: 8%;
+    height: 6%;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+}
+.links-redes-sociais {
+
+    height: 100px;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+}
+/* FIM LAYOUT PADRÃO */
+#Login{
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+}
+.caixa {
+    margin-top: 200px;
+    margin-left: auto; /* Alinhar à direita */
+}
+
+.email input {
+    border-radius:  15px;
+    border-color:  darkgrey;
+    width: 20rem;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b6b6b6;
+    color: #111111;
+    
+}
+
+.senha input{
+    border-radius:  15px;
+    border-color:  darkgrey;
+    width: 20rem;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b6b6b6;
+    color: #111111;
+    margin-top: 15px;
+}
+.entar input{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0CA73D;
+    margin: 15px;
+}
+h1{
+    border-radius:  15px;
+    width: 250px;
+    height: 40px;
+    padding: 0.2rem;
+    background-color: #84E2A1;
+    color:#111111;
+    margin: 40px;
+
+
+}
+#cadastro{
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .maior {
+    display: flex;
+     justify-content: space-around;
+     height: 25rem;
+  }
+
+  .input-cadastro{
+   width: 100%;
+  }
+.Cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
