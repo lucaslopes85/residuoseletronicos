@@ -78,7 +78,7 @@ main {
 
 #rodape .fale-conosco {
     width: 100px;
-    margin: auto 40px;
+    justify-items: center;
     float: right;
 }
 /* FIM LAYOUT PADRÃO */
@@ -151,7 +151,7 @@ main {
     display: center;
     align-self: center;
     justify-items: center;
-    margin-left: 18%;
+    margin-left: 22%;
 }
 
 .celular,
@@ -160,7 +160,7 @@ main {
 .computador {
     display: inline-block;
     align-self: center;
-    padding: 60px;
+    padding: 30px;
     font-size: large;
     margin-top: 30px;
     text-align: center;
