@@ -1,0 +1,147 @@
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+    /* background-color: #f0f8f0; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
+    width: 15%;
+}
+
+.cabecalho{
+    height: 60px;
+}
+
+nav {
+    float: left;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f0;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin: 10px 30px 10px 30px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    color: #222222;
+    background-color: #f0f8f0;
+    text-decoration: none;
+    font-size: 1.02em;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+    border-bottom: 3px solid #8bd218;
+}
+
+.login {
+    width: 5%;
+    float: right;
+}
+
+main {
+    clear: both;
+    padding: 30px;
+}
+
+#rodape {
+    padding: 20px;
+    height: 100px;
+    background-color: #bff090;
+}
+
+#rodape .prefeitura-logo {
+    width: 300px;
+    height: 90px;
+    float: left;
+}
+
+#rodape div {
+    display: inline;
+    clear: both;
+    margin: auto 350px;
+    width: 100%;
+}
+
+#rodape .fale-conosco {
+    width: 100px;
+    justify-items: center;
+    float: right;
+}
+
+/* Botão Parceiros */
+
+.parceiros {
+    display: block;
+    background-color: #414BB2;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10%;
+    color: white;
+}
+
+/* Cards dos Parceiros e descontos */
+
+.cards-parceiros {
+    display: center;
+    align-self: center;
+    justify-items: center;
+    margin-left: 10%;
+    margin-top: 60px;
+}
+
+.iptu,
+.ifood,
+.dotz,
+.supbh {
+    display: inline-block;
+    align-self: center;
+    padding: 30px;
+    text-align: center;
+    background-color: #BFF090;
+    border-radius: 10px;
+    margin-right: 40px;
+    font-size: large;
+    margin-bottom: 30px;
+}
+
+.iptu:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.ifood:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.dotz:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.supbh:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+

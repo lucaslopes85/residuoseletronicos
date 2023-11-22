@@ -80,7 +80,7 @@ main {
 
 #rodape .fale-conosco {
     width: 100px;
-    margin: auto 40px;
+    justify-items: center;
     float: right;
 }
 
