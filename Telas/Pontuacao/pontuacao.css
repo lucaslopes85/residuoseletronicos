@@ -1,7 +1,7 @@
 /* FORMATAÇÃO PADRÃO */
 * {
     margin: 0px;
-    background-color: #f0f8f0;
+    /* background-color: #f0f8f0; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -65,6 +65,7 @@ main {
 
 #rodape .prefeitura-logo {
     width: 300px;
+    height: 90px;
     float: left;
 }
 
@@ -77,23 +78,23 @@ main {
 
 #rodape .fale-conosco {
     width: 100px;
-    margin: auto 40px;
+    justify-items: center;
     float: right;
 }
 /* FIM LAYOUT PADRÃO */
 
-
 .foto-usuario {
     display: flex;
+    justify-content: left;
     width: 250px;
     height: auto;
-    background-color: #425f32;
+    background-color: #29af94;
     border-radius: 30px;
     padding: 10px;
 }
 
 .foto-usuario > h3 {
-    background-color: #425f32;
+    background-color: #29af94;
     border-radius: 0 0 30px 30px;
     display: flex;
     justify-content: center;
@@ -104,62 +105,134 @@ main {
 
 .foto-usuario > img {
     display: block;
-    background-color: #425f32;
+    background-color: #29af94;
     border-radius: 0 0 30px 30px;
     margin: 0 auto;;
 }
 
-.container-pontuacao {
-    align-items: center;
-    height: auto;
-    width: 350px;
-    margin-top: 25px;
+/* Botões dos pontos */
+
+.cards-pontos {
+    display: center;
+    align-self: center;
+    justify-items: center;
+    margin-left: 30%;
 }
 
-.pontos,
-.troca,
-.extrato {
-    display: flex;
+.pontos > h1 {
+    background-color: #9898e1;
+    margin: 0 auto;
+}
+
+.troca > h2,
+.extrato > h3 {
+    background-color: #414BB2;
+    margin: 0 auto;
+}
+
+.troca:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.extrato:hover {
+     transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.troca > img,
+.extrato > img {
+    background-color: #414BB2;
+    margin: 0 15px 0 10px;
+}
+
+.pontos {
+    display: center;
     align-self: center;
     justify-content: center;
-    align-items: center;
-    background-color: #76993D;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
-    gap: 2rem;
-    font-size: large;
-}
-
-.container-blocos-itens {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    color: black;
+    width: 400px;
     height: auto;
-    width: 350px;
-    margin-top: 80px;
+    background-color: #9898e1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    color: #414BB2;
 }
 
-.blocos-itens {
-    display: inline-flex;
-    flex-direction: row;
+.troca,
+.extrato {
+    display: center;
+    align-self: center;
     justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    font-size: larger;
-    max-height: 250px;
-    max-width: 150px;
+    color: black;
+    width: 400px;
+    height: auto;
+    background-color: #414BB2;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* Botões das Figuras */
+
+.cards-figuras {
+    display: center;
+    align-self: center;
+    justify-items: center;
+    margin-left: 15%;
 }
 
 .celular,
 .tablet,
 .notebook,
 .computador {
-    display: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0f2b6;
-    font-size: larger;
-    border-radius: 5px;
+    display: inline-block;
+    align-self: center;
+    padding: 30px;
+    font-size: large;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #BFF090;
+    margin-right: 12px;
+    border-radius: 20px;
+    color: black;
+    margin-bottom: 30px;
 }
+
+.celular > h1, p,
+.tablet > h1, p,
+.notebook > h1, p,
+.computador > h1, p {
+    background-color: #BFF090;
+    padding: 5px;
+}
+
+/* .computador:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.celular:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.tablet:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.notebook:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+} */
