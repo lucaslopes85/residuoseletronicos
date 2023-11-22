@@ -136,6 +136,11 @@ main {
     border: solid 0.8mm #628A4C;
 }
 
+.troca > h2 > a {
+    text-decoration: none;
+    color: white;
+}
+
 .extrato:hover {
      transition-duration: 0.3s;
     scale: 1.1;
