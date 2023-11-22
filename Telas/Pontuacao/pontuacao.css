@@ -88,13 +88,13 @@ main {
     justify-content: left;
     width: 250px;
     height: auto;
-    background-color: #425f32;
+    background-color: #29af94;
     border-radius: 30px;
     padding: 10px;
 }
 
 .foto-usuario > h3 {
-    background-color: #425f32;
+    background-color: #29af94;
     border-radius: 0 0 30px 30px;
     display: flex;
     justify-content: center;
@@ -105,41 +105,73 @@ main {
 
 .foto-usuario > img {
     display: block;
-    background-color: #425f32;
+    background-color: #29af94;
     border-radius: 0 0 30px 30px;
     margin: 0 auto;;
 }
+
+/* Botões dos pontos */
 
 .cards-pontos {
     display: center;
     align-self: center;
     justify-items: center;
-    margin-left: 40%;
+    margin-left: 30%;
 }
 
-.pontos > h1, 
+.pontos > h1 {
+    background-color: #9898e1;
+    margin: 0 auto;
+}
+
 .troca > h2,
 .extrato > h3 {
-    background-color: #425f32;
+    background-color: #414BB2;
     margin: 0 auto;
+}
+
+.troca:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.extrato:hover {
+     transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
 }
 
 .troca > img,
 .extrato > img {
-    background-color: #425f32;
+    background-color: #414BB2;
     margin: 0 15px 0 10px;
 }
 
-.pontos,
+.pontos {
+    display: center;
+    align-self: center;
+    justify-content: center;
+    color: black;
+    width: 400px;
+    height: auto;
+    background-color: #9898e1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    color: #414BB2;
+}
+
 .troca,
 .extrato {
     display: center;
     align-self: center;
     justify-content: center;
     color: black;
-    width: 350px;
+    width: 400px;
     height: auto;
-    background-color: #425f32;
+    background-color: #414BB2;
     border-radius: 10px;
     padding: 10px;
     margin-top: 15px;
@@ -147,11 +179,13 @@ main {
     color: white;
 }
 
+/* Botões das Figuras */
+
 .cards-figuras {
     display: center;
     align-self: center;
     justify-items: center;
-    margin-left: 22%;
+    margin-left: 15%;
 }
 
 .celular,
@@ -164,10 +198,10 @@ main {
     font-size: large;
     margin-top: 30px;
     text-align: center;
-    background-color: #76993D;
+    background-color: #BFF090;
     margin-right: 12px;
     border-radius: 20px;
-    color: white;
+    color: black;
     margin-bottom: 30px;
 }
 
@@ -175,14 +209,29 @@ main {
 .tablet > h1, p,
 .notebook > h1, p,
 .computador > h1, p {
-    background-color: #76993D;
+    background-color: #BFF090;
     padding: 5px;
 }
 
-/* .celular,
-.tablet,
-.notebook,
-.computador:hover {
+/* .computador:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.celular:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.tablet:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.notebook:hover {
     transition-duration: 0.3s;
     scale: 1.1;
     border: solid 0.8mm #628A4C;

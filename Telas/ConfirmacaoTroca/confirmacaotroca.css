@@ -1,0 +1,112 @@
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+    /* background-color: #f0f8f0; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
+    width: 15%;
+}
+
+.cabecalho{
+    height: 60px;
+}
+
+nav {
+    float: left;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f0;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin: 10px 30px 10px 30px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    color: #222222;
+    background-color: #f0f8f0;
+    text-decoration: none;
+    font-size: 1.02em;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+    border-bottom: 3px solid #8bd218;
+}
+
+.login {
+    width: 5%;
+    float: right;
+}
+
+main {
+    clear: both;
+    padding: 30px;
+}
+
+#rodape {
+    padding: 20px;
+    height: 100px;
+    background-color: #bff090;
+}
+
+#rodape .prefeitura-logo {
+    width: 300px;
+    height: 90px;
+    float: left;
+}
+
+#rodape div {
+    display: inline;
+    clear: both;
+    margin: auto 350px;
+    width: 100%;
+}
+
+#rodape .fale-conosco {
+    width: 100px;
+    justify-items: center;
+    float: right;
+}
+
+/* Botão Comprovante */
+
+.comprovante {
+    display: block;
+    background-color: #9898e1;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 35%;
+    color: #414BB2;
+}
+
+.troca-realizada {
+    display: inline-block;
+    align-self: center;
+    padding: 30px;
+    text-align: center;
+    background-color: #BFF090;
+    border-radius: 10px;
+    margin-right: 40px;
+    font-size: medium;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 25%;
+    color: rgb(49, 46, 46);
+}
