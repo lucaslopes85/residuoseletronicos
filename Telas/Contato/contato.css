@@ -1,0 +1,194 @@
+/* Layout Página */
+
+* { padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main main main" "content aside aside aside" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainMain {
+    grid-area: main;
+}
+
+.mainContet {
+    grid-area: content;
+    background: blue;
+}
+
+.mainAside {
+    grid-area: aside;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/* FIM DO TESTE */
+
+/* CABEÇALHO */
+
+.logo {
+    float: left;
+    width: 15%;
+}
+
+.cabecalho{
+    height: 60px;
+}
+
+nav {
+    float: left;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f0;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin: 10px 30px 10px 30px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    color: #222222;
+    background-color: #f0f8f0;
+    text-decoration: none;
+    font-size: 1.02em;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+    border-bottom: 3px solid #8bd218;
+}
+
+.login {
+    width: 5%;
+    float: right;
+}
+
+main {
+    clear: both;
+    padding: 30px;
+}
+
+/* FIM DO CABEÇALHO */
+
+/* INÍCIO DO RODAPÉ */
+
+.rodape {
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #bff090;
+    margin-top: auto;
+    bottom: 0; /* Posicione o rodapé no fundo */
+    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
+}
+.prefeitura-logo {
+    width: 20rem;
+}
+  
+.fale-conosco {
+    width: 8%;
+    height: 6%;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+}
+.links-redes-sociais {
+    height: 60px;
+}
+ 
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background: #bff090;
+}
+
+/* FIM DO RODAPÉ */
+
+.mainMain {
+    display: block;
+    margin: 50px 200px;
+    background-color: #bff090;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.mainContent {
+    display: block;
+    text-align: center;
+}
+
+.mainContent > img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50%;
+}
+
+.mainAside {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 550px;
+    min-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.botao {
+    border-radius: 15px;
+    border-color: darkgrey;
+    width: 35rem;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b6b6b6;
+    color: #111111;
+    margin-top: 15px;
+}
+
+.botao-1 {
+    border-radius: 15px;
+    border-color: darkgrey;
+    width: 35rem;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b6b6b6;
+    color: #111111;
+    margin-top: 15px;
+}
+
+textarea {
+    border-radius: 10px;
+    width: 36rem;
+}
+
+.mainAside > h1 {
+    text-align: left;
+    color: #111111;
+}
+
+.botao-2 {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 0.8mm #628A4C;
+    background-color: #756de6e0;
+    margin: 15px;
+    margin-left: 78%;
+}
