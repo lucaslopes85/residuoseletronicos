@@ -70,15 +70,13 @@ main {
     padding: 0.7rem;
     background-color: #bff090;
     margin-top: auto;
-    position: fixed; /* Altere para position: fixed */
     bottom: 0; /* Posicione o rodapé no fundo */
     width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
 }
 .prefeitura-logo {
     width: 20rem;
 }
-
-
+  
 .fale-conosco {
     width: 8%;
     height: 6%;
@@ -86,14 +84,15 @@ main {
     margin-right: 2rem;
 }
 .links-redes-sociais {
-
-    height: 100px;
+    height: 60px;
 }
-
+ 
 .redes-sociais{
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
+
 /* FIM LAYOUT PADRÃO */
 #Login{
     text-align: center;
@@ -103,7 +102,7 @@ main {
     flex-direction: row;
 }
 .caixa {
-    margin-top: 200px;
+    margin-top: 60px;
     margin-left: auto; /* Alinhar à direita */
 }
 

@@ -57,30 +57,59 @@ main {
     padding: 30px;
 }
 
-#rodape {
+.rodape {
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #bff090;
+    margin-top: auto;
+    bottom: 0; /* Posicione o rodapé no fundo */
+    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
+}
+.prefeitura-logo {
+    width: 20rem;
+}
+  
+.fale-conosco {
+    width: 8%;
+    height: 6%;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+}
+.links-redes-sociais {
+    height: 60px;
+}
+ 
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* #rodape {
     padding: 20px;
     height: 100px;
     background-color: #bff090;
-}
+} */
 
-#rodape .prefeitura-logo {
+/* #rodape .prefeitura-logo {
     width: 300px;
     height: 90px;
     float: left;
-}
+} */
 
-#rodape div {
+/* #rodape div {
     display: inline;
     clear: both;
     margin: auto 350px;
     width: 100%;
-}
+} */
 
-#rodape .fale-conosco {
+/* #rodape .fale-conosco {
     width: 100px;
     justify-items: center;
-    float: right;
-}
+    float: right; */
+
+
 /* FIM LAYOUT PADRÃO */
 
 .foto-usuario {
