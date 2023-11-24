@@ -4,48 +4,83 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
 
-        <title>Título da Página</title>
+        <title>Tela Padrão</title>
     </head>
 
-    <body>
-        <!-- Cabeçalho -->
+    <body class="home">
+        
+        <!-- Início cabeçalho -->
         <header>
-            <a href="Index.html">
-                <img class="cabecalho" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
-            </a>
+            <section class="barra-nav">
+                <img class="logo-reciclamais" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
+            </section>
+
+            <!-- Início barra navegação -->
+            <nav class="barra-nav">
+                <ul id="navegacao">
+                    <li>
+                        <a id="home" href="Index.html">Início</a>
+                    </li>
+                    <li>
+                        <a id="todasNoticias" href="TodasNoticias.html">Notícias</a>
+                    </li>
+                    <li>
+                        <a id="agendamento" href="#">Agendamento</a>
+                    </li>
+                    <li>
+                        <a id="portalTransparencia" href="PortalTransparencia.html">Portal de Transparência</a>
+                    </li>
+                    <li>
+                        <a id="contato" href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fim barra navegação -->
+    
+            <section class="barra-nav">
+                <img class="login" src="../img/LayoutPadrao/imagem-usuario.png">
+            </section>
         </header>
+        <!-- Fim cabeçalho -->
 
-        <!-- Menu navegação -->
-        <nav>
-            <ul class="cabecalho">
-                <li><a href="Index.html">Início</a></li>
-                <li><a href="TodasNoticias.html">Notícias</a></li>
-                <li><a href="#">Agendamento</a></li>
-                <li><a href="PortalTransparencia.html">Portal de Transparência</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-
-        <!-- Login -->
-        <section class=" login">
-            <img class="cabecalho" src="../img/LayoutPadrao/imagem-usuario.png">
-        </section>
-
-        <main>
-            Conteúdo
+        <!-- Início container -->
+        <main id="container">
+            <div id="primario">Primário</div>
+            <div id="secundario">Secundário</div>
+            <div id="lateral">Lateral</div>
         </main>
+        <!-- Fim container -->
 
+        <!-- Início rodapé -->
         <footer id="rodape">
-            <img class="prefeitura-logo" src="../img/LayoutPadrao/PrefeituraBH.png" alt="Prefeitura de BH" height= 60px>
-            <div class="redes-sociais">
-                <img class="links-redes-sociais" src="../img/LayoutPadrao/redes-sociais.png" alt="Redes Sociais" height= 50px>
-            </div>
-            <img class="fale-conosco" src="../img/LayoutPadrao/fale-conosco.png" alt="Fale Conosco">
+            <section class="prefeitura-logo">
+                <img src="../img/LayoutPadrao/PrefeituraBH.png" alt="Instagram">
+            </section>
+            <section class="redes-sociais">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../img/LayoutPadrao/instagram.png" alt="X">
+                </a>
+                <a href="https://twitter.com/?lang=pt" target="_blank">
+                    <img src="../img/LayoutPadrao/x.png" alt="x">
+                </a>
+                <a href="https://www.youtube.com/?gl=BR" target="_blank">
+                    <img src="../img/LayoutPadrao/youtube.png" alt="YouTube">
+                </a>
+                <p>
+                    Copyright  ©2023 - ReciclaMais
+                </p>
+            </section>
+            <section class="fale-conosco">
+                <a href="">
+                    <img src="../img/LayoutPadrao/fale-conosco.png" alt="instagram">
+                </a>
+            </section>
+
         </footer>
 
+        
     </body>
 
 </html>
