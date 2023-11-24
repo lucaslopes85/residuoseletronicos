@@ -4,61 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/estilo.css">
     <title>Portal de Transparência</title>
 </head>
-<body>
-
+<body  id="uma-coluna" class="portalTransparencia">
+<!-- Início cabeçalho -->
 <header>
-    <a href="Index.html">
-        <img class="cabecalho" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
-    </a>
-</header>
+  <section class="barra-nav">
+      <img class="logo-reciclamais" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
+  </section>
 
-<nav>
-    <ul class="cabecalho">
-        <li><a href="/Telas/TodasNoticias.html">Início</a></li>
-        <li><a href="/Telas/DetalheNoticia.html">Notícias</a></li>
-        <li><a href="#">Agendamento</a></li>
-        <li><a href="/Telas/PortalTransparencia.html">Portal de Transparência</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
-</nav>
-
-<section class=" login">
-    <img class="cabecalho" src="../img/LayoutPadrao/imagem-usuario.png">
-</section>
-<!-- Cabeçalho -->
-<!-- 
-  <header>
-    <a href="Index.html">
-        <img class="cabecalho" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
-    </a>
-</header> -->
-
-<!-- Menu navegação -->
-
-  <!-- <nav>
-      <ul class="cabecalho">
-          <li><a href="Index.html">Início</a></li>
-          <li><a href="TodasNoticias.html">Notícias</a></li>
-          <li><a href="#">Agendamento</a></li>
-          <li><a href="PortalTransparencia.html">Portal de Transparência</a></li>
-          <li><a href="#">Contato</a></li>
+  <!-- Início barra navegação -->
+  <nav class="barra-nav">
+      <ul id="navegacao">
+          <li>
+              <a id="home" href="Index.html">Início</a>
+          </li>
+          <li>
+              <a id="todasNoticias" href="TodasNoticias.html">Notícias</a>
+          </li>
+          <li>
+              <a id="agendamento" href="#">Agendamento</a>
+          </li>
+          <li>
+              <a id="portalTransparencia" href="PortalTransparencia.html">Portal de Transparência</a>
+          </li>
+          <li>
+              <a id="contato" href="Contato.html">Contato</a>
+          </li>
       </ul>
-  </nav> -->
+  </nav>
+  <!-- Fim barra navegação -->
 
-<!-- Login -->
-
-  <!-- <section class=" login">
-      <img class="cabecalho" src="../img/LayoutPadrao/imagem-usuario.png">
-  </section> -->
+  <section class="barra-nav">
+      <img class="login" src="../img/LayoutPadrao/imagem-usuario.png">
+  </section>
+</header>
+<!-- Fim cabeçalho -->
 
 <!-- Topo da página-->
-
-<main>
-      <div class=box-title>
+<!-- Início container -->
+<main id="container">
+  <div id="conteudo">
+      <div id="primario">
+        <a href="Index.html">Home</a>
+        <a href="ContratosELegislacao.html">Contratos e Legislação</a>
+        <a href="RelatorioDetalhado.html">Relatório Detalhado</a>
+        <div class=box-title>
           <h1>Portal de Transparência</h1>
       </div>
 
@@ -149,18 +142,40 @@
           </a>
         </div>
       </section>
-    </main>
+      </div>
+  </div>
+</main>
+<!-- Fim container -->
 
-      <footer id="rodape">
-          <img  class="prefeitura-logo" src="/img/LayoutPadrao/PrefeituraBH.png" alt="Prefeitura de BH" height= 60px>
-        <div class="redes-sociais">
-          <img class="links-redes-sociais" src="/img/LayoutPadrao/redes-sociais.png" alt="Redes Sociais" height= 50px>
-        </div>
-          <img class="fale-conosco" src="/img/LayoutPadrao/fale-conosco.png" alt="Fale Conosco">
-      </footer>
-
+<!-- Início rodapé -->
+<footer id="rodape">
+  <section class="prefeitura-logo">
+      <img src="../img/layoutpadrao/prefeiturabh.png" alt="instagram">
+  </section>
+  <section class="redes-sociais">
+      <a href="https://www.instagram.com/" target="_blank">
+          <img src="../img/layoutpadrao/instagram.png" alt="x">
+      </a>
+      <a href="https://twitter.com/?lang=pt" target="_blank">
+          <img src="../img/layoutpadrao/x.png" alt="x">
+      </a>
+      <a href="https://www.youtube.com/?gl=br" target="_blank">
+          <img src="../img/layoutpadrao/youtube.png" alt="youtube">
+      </a>
+      <p>
+          Copyright  ©2023 - ReciclaMais
+      </p>
+  </section>
+  <section class="fale-conosco">
+      <a href="">
+          <img src="../img/layoutpadrao/fale-conosco.png" alt="instagram">
+      </a>
+  </section>
+</footer>
 <script src="/Script/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
