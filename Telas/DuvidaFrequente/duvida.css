@@ -1,0 +1,196 @@
+/* Layout Página */
+
+* { padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 35% 35% 15% 15%;
+    grid-template-areas: "header header header header" "main main main main" "content content aside aside" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainMain {
+    grid-area: main;
+}
+
+.mainContent {
+    grid-area: content;
+}
+
+.mainAside {
+    grid-area: aside;
+    background: yellow;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/* FIM DO TESTE */
+
+/* CABEÇALHO */
+
+.logo {
+    float: left;
+    width: 15%;
+}
+
+.cabecalho{
+    height: 60px;
+}
+
+nav {
+    float: left;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f0;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin: 10px 30px 10px 30px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    color: #222222;
+    background-color: #f0f8f0;
+    text-decoration: none;
+    font-size: 1.02em;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+    border-bottom: 3px solid #8bd218;
+}
+
+.login {
+    width: 5%;
+    float: right;
+}
+
+main {
+    clear: both;
+    padding: 30px;
+}
+
+/* FIM DO CABEÇALHO */
+
+/* INÍCIO DO RODAPÉ */
+
+.rodape {
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #bff090;
+    margin-top: auto;
+    bottom: 0; /* Posicione o rodapé no fundo */
+    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
+}
+.prefeitura-logo {
+    width: 20rem;
+}
+  
+.fale-conosco {
+    width: 8%;
+    height: 6%;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+}
+.links-redes-sociais {
+    height: 60px;
+}
+ 
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background: #bff090;
+}
+
+/* FIM DO RODAPÉ */
+
+.mainMain > h1 {
+    color: #4a4ab4;
+    margin-left: 2%;
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.separador {
+    margin: 10px 25px 10px;    
+    background-color: #9898E1;
+    height: 4px;
+}
+
+/* .mainContent {
+    width: 500px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 55px;
+} */
+
+.container {
+    box-shadow: 8px 10px 5px #0003;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 30px 60px 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordon_item {
+    border-radius: 5px;
+}
+
+.accordion_item:hover {
+    opacity: 0.9;
+}
+
+.accordion_header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion_content {
+    margin-left: 50px;
+    margin-right: 15px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s ease;
+    font-size: 14px;
+}
+
+.active {
+    padding-bottom: 10px;
+}
+
+span, .icon {
+    font-weight: 600;
+}
+
+p {
+    text-align: justify;
+}
