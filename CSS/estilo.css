@@ -132,7 +132,6 @@ body.contato #navegacao a#contato {
 
 /* Divisão das dimensões das colunas */
 #container {
-    float: left;
     width: 1200px;
     margin: 0px auto;
     padding: 0px 83px;
@@ -157,14 +156,15 @@ body.contato #navegacao a#contato {
     width: 900px;
     margin: 0 0 20px 300px;
     /* background: #f3f3f3 url(../img/HomePage/fundo-caixa.png); */
-    
     float: left;
+    border: 1px solid red;
 }
 
 #uma-coluna #primario {
     width: 1200px;
     background: #ddd;
     margin: 0 0 20px 0;
+    padding: 5px;
     float: left;
 }
 
@@ -174,6 +174,8 @@ body.contato #navegacao a#contato {
     margin: 0 0 20px -1200px;
     padding: 5px;
     float: left;
+    /* border: 1px solid red; */
+
 }
 /* Fim divisão das dimensões das colunas */
 
@@ -238,6 +240,40 @@ body.contato #navegacao a#contato {
     border: 1px solid #666;
 }
 
+#lateral .caixa form {
+    /* border: 1px solid red; */
+}
+
+#lateral .caixa form input {
+    width: 100%;
+    font-size: 1.1em;
+    margin: 5px auto;
+}
+
+#lateral .categorias ul {
+    float: left;
+    width: 100%;
+}
+
+#lateral .categorias ul li {
+    list-style-type: none;
+}
+
+#lateral .categorias ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#lateral .categorias ul a:hover {
+    color: #425f32;
+    padding-left: 20px;
+    background:  url(../img/HomePage/recycle.png) no-repeat left center;
+}
 
 
 
