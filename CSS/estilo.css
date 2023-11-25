@@ -156,7 +156,7 @@ body.contato #navegacao a#contato {
 #duas-colunas #primario {
     width: 900px;
     margin: 0 0 20px 300px;
-    background: #f3f3f3 url(../img/HomePage/fundo-caixa.png);
+    /* background: #f3f3f3 url(../img/HomePage/fundo-caixa.png); */
     
     float: left;
 }
@@ -170,7 +170,7 @@ body.contato #navegacao a#contato {
 
 #lateral {
     width: 280px;
-    background: #f3f3f3 url(../img/HomePage/fundo-caixa.png);
+    /* background: #f3f3f3 url(../img/HomePage/fundo-caixa.png); */
     margin: 0 0 20px -1200px;
     padding: 5px;
     float: left;
@@ -196,7 +196,13 @@ body.contato #navegacao a#contato {
     padding-bottom: 5px;
 }
 
-#lateral a, a:hover {
+#lateral a {
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+#lateral a:hover {
     font-size: 0.9em;
     padding-bottom: 5px;
     text-decoration: none;
