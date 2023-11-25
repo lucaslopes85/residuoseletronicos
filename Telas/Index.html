@@ -54,10 +54,64 @@
         <!-- Início container -->
         <main id="container">
             <div id="conteudo">
-                <h1>HomePage</h1>
-                <a href="TodasNoticias.html">Todas as notícias</a>
-                <div id="primario">primário</div>
-                <div id="lateral">lateral</div>
+
+                <!-- Início primário -->
+                <div id="primario">
+
+                    <div class="caixa">
+                        <h2>Pesquisar CEP</h2>
+                        <div class="caixa-conteudo">
+                            <div id="messagem-formulario">
+                                <p>
+                                    Encontre os postos de coleta de pilhas e baterias mais próximos da sua localidade.
+                                </p>
+                            </div>
+                            <div id="formulario-cep">
+                                <form action="">
+                                    <input type="text" name="cep" id="cep" placeholder="_____-___">
+                                
+                                    <input type="submit" name="" id="pesquisa-cep" value="Pesquisar">
+                                </form>
+                            </div>
+                            <div id="mapa">
+                                <img src="../img/HomePage/maps.png" alt="Google Maps">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                <!-- Fim primário -->
+
+                <!-- Início lateral -->
+                <div id="lateral">
+                    <div class="caixa">
+                        <h2>Principais Notícias</h2>
+                        <div class="caixa-conteudo">
+                            <img src="../img/HomePage/lixoe.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, a.</p>
+                            <a class="leia-mais" href="DetalheNoticia.html">Leia mais...</a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="caixa">
+                        <div class="caixa-conteudo">
+                            <img src="../img/HomePage/coleta-lixo-eletronico.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, a.</p>
+                            <a class="leia-mais" href="DetalheNoticia.html">Leia mais...</a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="todas-noticias">
+                        <a href="TodasNoticias.html">Todas as notícias</a>
+                    </div>
+                    
+                </div>
+                <!-- Fim lateral -->
+
             </div>
         </main>
         <!-- Fim container -->
