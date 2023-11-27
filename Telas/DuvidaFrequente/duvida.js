@@ -1,18 +1,18 @@
 const accordion_item = document.querySelectorAll(".accordion_item");
 
 accordion_item.forEach((item) => {
-    const accordion_header_item = item.querySelectorAll(".accordion_header");
-
+    const accordion_header_item = item.querySelector(".accordion_header");
+    
     accordion_header_item.addEventListener("click", () => {
         const accordion_content_item = item.querySelector(".accordion_content");
 
         const content_actived = document.querySelector(".active");
 
-        VerifyActive(item, accordion_content_item, content_actived);
+        verifyActive(item, accordion_content_item, content_actived);
     });
 });
 
-function VerifyActive(item, content, content_actived) {
+function verifyActive(item, content, content_actived) {
     const icon_item = item.querySelector(".icon");
 
     const icons = document.querySelectorAll(".icon");

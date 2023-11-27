@@ -5,7 +5,7 @@
 #main {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 35% 35% 15% 15%;
+    grid-template-columns: auto 70% 30% auto;
     grid-template-areas: "header header header header" "main main main main" "content content aside aside" "footer footer footer footer";
 }
 
@@ -23,7 +23,6 @@
 
 .mainAside {
     grid-area: aside;
-    background: yellow;
 }
 
 .mainFooter {
@@ -97,6 +96,7 @@ main {
     bottom: 0; /* Posicione o rodapé no fundo */
     width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
 }
+
 .prefeitura-logo {
     width: 20rem;
 }
@@ -133,22 +133,14 @@ main {
     height: 4px;
 }
 
-/* .mainContent {
-    width: 500px;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 55px;
-} */
 
 .container {
     box-shadow: 8px 10px 5px #0003;
-    max-width: 600px;
+    max-width: 650px;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-    margin: 20px 30px 60px 80px;
+    margin: 20px 10px 165px 150px;
     align-items: center;
     justify-content: center;
 }
@@ -184,7 +176,7 @@ main {
 }
 
 .active {
-    padding-bottom: 10px;
+    padding-bottom: 70px;
 }
 
 span, .icon {
@@ -194,3 +186,18 @@ span, .icon {
 p {
     text-align: justify;
 }
+
+.mainAside {
+    display: block;
+    color: #4a4ab4;
+    margin-bottom: 10px;
+}
+
+.mainAside > img:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+    border-radius: 10px;    
+}
+
+

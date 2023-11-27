@@ -4,7 +4,7 @@
 
 #main {
     display: grid;
-    grid-template-rows: 70% 300% 70%;
+    grid-template-rows: auto 200% auto;
     grid-template-areas: "header header header header" "content aside aside aside" "footer footer footer footer";
 }
 
@@ -81,3 +81,38 @@ main {
     clear: both;
     padding: 30px;
 }
+
+/* FIM DO CABEÇALHO */
+
+/* INÍCIO DO RODAPÉ */
+
+.rodape {
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #bff090;
+    margin-top: auto;
+    bottom: 0; /* Posicione o rodapé no fundo */
+    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
+}
+.prefeitura-logo {
+    width: 20rem;
+}
+  
+.fale-conosco {
+    width: 8%;
+    height: 6%;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+}
+.links-redes-sociais {
+    height: 60px;
+}
+ 
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background: #bff090;
+}
+
+/* FIM DO RODAPÉ */
