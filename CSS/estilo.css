@@ -14,6 +14,10 @@
     clear: both;
 }
 
+.border {
+    border: 1px solid red;
+}
+
 /* LAYOUT PADRÃO */
 header {
     float: left;
@@ -157,7 +161,6 @@ body.contato #navegacao a#contato {
     margin: 0 0 20px 300px;
     /* background: #f3f3f3 url(../img/HomePage/fundo-caixa.png); */
     float: left;
-    border: 1px solid red;
 }
 
 #uma-coluna #primario {
@@ -181,6 +184,7 @@ body.contato #navegacao a#contato {
 
 
 /* TELA PRINCIPAL */
+/* Formatação lateral */
 #lateral .caixa {
     margin: 0px 0px 2px 0px;
     padding: 5px;
@@ -240,10 +244,6 @@ body.contato #navegacao a#contato {
     border: 1px solid #666;
 }
 
-#lateral .caixa form {
-    /* border: 1px solid red; */
-}
-
 #lateral .caixa form input {
     width: 100%;
     font-size: 1.1em;
@@ -274,9 +274,9 @@ body.contato #navegacao a#contato {
     padding-left: 20px;
     background:  url(../img/HomePage/recycle.png) no-repeat left center;
 }
+/* Fim Formatação lateral */
 
-
-
+/* Formatação Primario */
 #primario .caixa {
     margin: 5px 0px 0px 0px;
     padding: 5px;
@@ -291,7 +291,6 @@ body.contato #navegacao a#contato {
 
 #primario .caixa img {
     width: 260px;
-    padding-bottom: 5px;
     display: block;
 }
 
@@ -334,9 +333,59 @@ body.contato #navegacao a#contato {
 #primario #mapa img {
     width: 100%;
 }
-
-
+/* Formatação Primario */
 /* FIM TELA PRINCIPAL */
+
+/* Formatação caixa de noticia resumida */
+.noticia-item {
+    float: left;
+    margin: 5px 0 0 0;
+    min-height: 210px;
+    width: 100%;
+    border: 1px solid black;
+    background: #ccc url(../img/HomePage/fundo-caixa.png);
+}
+
+.noticia-item .capa-noticia {
+    float: left;
+    margin: 5px;
+    border: 1px solid #666;
+    max-width: 280px;
+    padding: 0;
+}
+
+.noticia-item .capa-noticia img {
+    float: left;
+    min-height: 210px;
+    max-height: 210px;
+
+}
+
+.noticia-item .textos-noticia {
+    float: left;
+    border: 1px solid green;
+    background: #fff;
+    margin: 5px 5px 5px 0px;
+    width: 610px;
+    min-height: 210px;
+    max-height: 210px;
+}
+
+.noticia-item .textos-noticia .titulo-noticia {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8em;
+    margin: 10px;
+}
+
+.noticia-item .textos-noticia .resumo-noticia {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.4em;
+    
+
+}
+
+/* Fim Formatação caixa de noticia resumida */
+
 
 .box-title {
     padding: 5px 10px 5px;
