@@ -4,7 +4,7 @@
 
 #main {
     display: grid;
-    grid-template-rows: auto 200% auto;
+    grid-template-rows: auto;
     grid-template-areas: "header header header header" "content aside aside aside" "footer footer footer footer";
 }
 
@@ -19,12 +19,10 @@
 
 .mainAside {
     grid-area: aside;
-    background: yellow;
 }
 
 .mainFooter {
     grid-area: footer;
-    background: green;
 }
 
 /* FIM DO TESTE */
@@ -116,3 +114,243 @@ main {
 }
 
 /* FIM DO RODAPÉ */
+
+.foto-usuario {
+    display: flex;
+    justify-content: left;
+    width: 250px;
+    height: auto;
+    background-color: #628A4C;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 15px auto;
+    margin-top: 50px;
+}
+
+.foto-usuario > h3 {
+    background-color: #628A4C;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    height: 30px; 
+    color: #effaef;
+    margin-top: 15px;
+}
+
+.foto-usuario > img {
+    display: block;
+    background-color: #628A4C;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;;
+}
+
+.lista {
+    display: block;
+    border: 1px solid #66a743;
+    width: 200px;
+    height: 30px;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+.lista > p {
+    color: #628A4C;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.solicitar {
+    display: flex;
+    background-color: #76993D;
+    width: 200px;
+    height: 28px;
+    margin: 15px auto;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.solicitar > p {
+    color: #effaef;
+    justify-content: center;
+    margin-left: 0;
+    align-items: center;
+    padding: 5px;
+}
+
+.botao-dados-cadastrais, 
+.botao-duvidas-frequentes,
+.botao-fale-conosco {
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin: 15px auto;    
+    max-width: 250px;
+    padding: 8px;
+    background-color: #76993D;
+    border-radius: 5px;
+}
+
+.botao-dados-cadastrais > p, 
+.botao-duvidas-frequentes > p,
+.botao-fale-conosco > p {
+    background-color: #76993D;
+    color: #effaef;
+}
+
+.botao-dados-cadastrais > img, 
+.botao-duvidas-frequentes > img,
+.botao-fale-conosco > img,
+.solicitar > img {
+    background-color: #76993D;
+    margin: 0 15px 0 10px;
+}
+
+.nova-solicitacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #76993D;
+    width: 230px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 70px 50px 50px 250px;
+}
+
+.nova-solicitacao > p {
+    color: #effaef;
+    margin: 0 15px 0 10px;
+    font-size: 20px;
+}
+
+.nova-solicitacao > i {
+    color: #effaef;
+}
+
+.separador {
+    margin: 10px 25px 10px;    
+    background-color: #425f32;
+    height: 4px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.tabela-solicitacao-atual {
+    margin-left: 30px;
+}
+
+.tabela-solicitacao-atual th {
+    border: none;
+    background-color: #76993D;
+    width: 230px;
+}
+
+.tabela-solicitacao-atual td {
+    border: none;
+    background-color: #E0F2B6;
+}
+
+.tabela-solicitacao-atual td, ul, li {
+    text-align: start !important;
+    font-size: 15px !important;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+h2 {
+    display: flex;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: #76993D;
+    float: right;
+    margin-right: 90px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+h4 {
+    display: flex;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: #5963e7;
+    float: right;
+    margin-right: 90px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.tabela-historico-solicitacao {
+    margin-left: 30px;
+}
+
+.tabela-historico-solicitacao th{
+    border: none;
+    background-color: #5963e7;
+    width: 230px;
+}
+
+.tabela-historico-solicitacao td {
+    border: none;
+    background-color: #b6bae7;
+}
+
+.tabela-historico-solicitacao td, ul, li {
+    text-align: start !important;
+    font-size: 15px !important;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.botao-duvidas-frequentes:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.5mm #628A4C;
+}
+
+.botao-duvidas-frequentes > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.botao-fale-conosco:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.5mm #628A4C;
+}
+
+.botao-fale-conosco > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.botao-dados-cadastrais:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.5mm #628A4C;
+}
+
+.botao-dados-cadastrais > p > a {
+    text-decoration: none;
+    color: white;
+}
