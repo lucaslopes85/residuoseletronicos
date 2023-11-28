@@ -9,51 +9,140 @@
         <title>Homepage - Reciclamais</title>
     </head>
 
-    <body>
+    <body id="duas-colunas" class="home">
+        
+        <!-- Início cabeçalho -->
         <header>
-            <a href="Index.html">
-                <img class="cabecalho" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
-            </a>
+            <section class="barra-nav">
+                <img class="logo-reciclamais" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
+            </section>
+
+            <!-- Início barra navegação -->
+            <nav class="barra-nav">
+                <ul id="navegacao">
+                    <li>
+                        <a id="home" href="Index.html">Início</a>
+                    </li>
+                    <li>
+                        <a id="todasNoticias" href="TodasNoticias.html">Notícias</a>
+                    </li>
+                    <li>
+                        <a id="agendamento" href="#">Agendamento</a>
+                    </li>
+                    <li>
+                        <a id="portalTransparencia" href="PortalTransparencia.html">Portal de Transparência</a>
+                    </li>
+                    <li>
+                        <a id="contato" href="Contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fim barra navegação -->
+    
+            <section class="barra-nav">
+                <img class="login" src="../img/LayoutPadrao/imagem-usuario.png">
+            </section>
         </header>
+        <!-- Fim cabeçalho -->
 
-        <nav>
-            <ul class="cabecalho">
-                <li><a href="TodasNoticias.html">Início</a></li>
-                <li><a href="DetalheNoticia.html">Notícias</a></li>
-                <li><a href="/Telas/AgendamentoLogin/agendamentologin.html">Agendamento</a></li>
-                <li><a href="PortalTransparencia.html">Portal de Transparência</a></li>
-                <li><a href="/Telas/Contato/contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <!-- Início do banner informativo -->
+        <div id="banner">
+            <p>Atenção para a próxima coleta: Bairros Santa Inês, Horto e Nova Vista <br> Dia 01/01/2023</p>
+        </div>
+        <!-- Fim do banner informativo -->
 
-        <section class="login">
-            <img class="cabecalho" src="../img/LayoutPadrao/imagem-usuario.png">
-        </section>
+        <!-- Início container -->
+        <main id="container">
+            <div id="conteudo">
 
-        <main class="conteudo-principal">
-            <section class="noticias-resumidas">
-                <div class="manchete">
-                    Machete 1
+                <!-- Início primário -->
+                <div id="primario">
+
+                    <div class="caixa">
+                        <h2>Pesquisar CEP</h2>
+                        <div class="caixa-conteudo">
+                            <div id="messagem-formulario">
+                                <p>
+                                    Encontre os postos de coleta de pilhas e baterias mais próximos da sua localidade.
+                                </p>
+                            </div>
+                            <div id="formulario-cep">
+                                <form action="">
+                                    <input type="text" name="cep" id="cep" placeholder="_____-___">
+                                
+                                    <input type="submit" name="" id="pesquisa-cep" value="Pesquisar">
+                                </form>
+                            </div>
+                            <div id="mapa">
+                                <img src="../img/HomePage/maps.png" alt="Google Maps">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
                 </div>
-                <div class="manchete">
-                    Machete 2
-                </div>
-            </section>
-            <section class="mapa">
-                <div class="">
-                    Mapa
-                </div>
-            </section>
-        </main>
+                <!-- Fim primário -->
 
-        <footer class="rodape">
-            <div class="redes-sociais">
-                <img class="prefeitura-logo" src="/Telas/LayoutPadrao/PrefeituraBH.png" alt="Prefeitura de BH">
-                <img class="links-redes-sociais" src="/Telas/LayoutPadrao/redes-sociais.png" alt="Redes Sociais" height= 60px>
-                <img class="fale-conosco" src="/Telas/LayoutPadrao/fale-conosco.png" alt="Fale Conosco">
+                <!-- Início lateral -->
+                <div id="lateral">
+                    <div class="caixa">
+                        <h2>Principais Notícias</h2>
+                        <div class="caixa-conteudo">
+                            <img src="../img/HomePage/lixoe.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, a.</p>
+                            <a class="leia-mais" href="NoticiaColetaResiduoEletronico.html">Leia mais...</a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="caixa">
+                        <div class="caixa-conteudo">
+                            <img src="../img/HomePage/coleta-lixo-eletronico.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, a.</p>
+                            <a class="leia-mais" href="NoticiaColetaLixoEletronico.html">Leia mais...</a>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="todas-noticias">
+                        <a href="TodasNoticias.html">Todas as notícias</a>
+                    </div>
+                    
+                </div>
+                <!-- Fim lateral -->
+
             </div>
+        </main>
+        <!-- Fim container -->
+
+        <!-- Início rodapé -->
+        <footer id="rodape">
+            <section class="prefeitura-logo">
+                <img src="../img/layoutpadrao/prefeiturabh.png" alt="instagram">
+            </section>
+            <section class="redes-sociais">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../img/layoutpadrao/instagram.png" alt="x">
+                </a>
+                <a href="https://twitter.com/?lang=pt" target="_blank">
+                    <img src="../img/layoutpadrao/x.png" alt="x">
+                </a>
+                <a href="https://www.youtube.com/?gl=br" target="_blank">
+                    <img src="../img/layoutpadrao/youtube.png" alt="youtube">
+                </a>
+                <p>
+                    Copyright  ©2023 - ReciclaMais
+                </p>
+            </section>
+            <section class="fale-conosco">
+                <a href="">
+                    <img src="../img/layoutpadrao/fale-conosco.png" alt="instagram">
+                </a>
+            </section>
         </footer>
 
+        
     </body>
 
 </html>
