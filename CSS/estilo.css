@@ -15,7 +15,7 @@
 }
 
 .border {
-    border: 1px solid red;
+    border: 1px solid black;
 }
 
 /* LAYOUT PADRÃO */
@@ -396,6 +396,25 @@ body.contato #navegacao a#contato {
     font-size: small;
     color: #425f32;
 }
+
+/* Formatação detalhe noticia */
+#primario .caixa .titulo-noticia {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8em;
+    margin: 10px;
+}
+
+#primario .caixa h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8em;
+    margin: 10px;
+}
+
+#primario .caixa div .img-noticia {
+    width: 100%;
+}
+
+/* Fim Formatação detalhe noticia */
 
 
 /* Fim Formatação caixa de noticia resumida */
