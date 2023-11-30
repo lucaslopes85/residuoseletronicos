@@ -33,7 +33,7 @@
 
 /* CABEÇALHO */
 
-.logo {
+/* .logo {
     float: left;
     width: 15%;
 }
@@ -82,41 +82,44 @@ nav ul li a:hover {
 main {
     clear: both;
     padding: 30px;
-}
+} */
 
 /* FIM DO CABEÇALHO */
 
 /* INÍCIO DO RODAPÉ */
 
-.rodape {
+/* .rodape {
     align-items: center;
     padding: 0.7rem;
     background-color: #bff090;
     margin-top: auto;
-    bottom: 0; /* Posicione o rodapé no fundo */
-    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
-}
+    bottom: 0; 
+    /* Posicione o rodapé no fundo */
+    /* width: 100%;  */
+    /* Garanta que o rodapé ocupe a largura total da página */
+/* } */ 
 
-.prefeitura-logo {
+/* .prefeitura-logo {
     width: 20rem;
-}
+} */
   
-.fale-conosco {
+/* .fale-conosco {
     width: 8%;
     height: 6%;
     margin-top: 0.5rem;
     margin-right: 2rem;
-}
-.links-redes-sociais {
+} */
+
+/* .links-redes-sociais {
     height: 60px;
-}
+} */
  
-.redes-sociais{
+/* .redes-sociais{
     display: flex;
     justify-content: space-between;
     margin: auto;
     background: #bff090;
-}
+} */
 
 /* FIM DO RODAPÉ */
 

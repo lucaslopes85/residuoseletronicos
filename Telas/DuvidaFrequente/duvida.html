@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Telas/DuvidaFrequente/duvida.css">
-    
+    <link rel="stylesheet" href="../../CSS/estilo.css">
+
     <title>Dúvidas Frequentes</title>
 </head>
-<body>
-    
 
-        <section id="main">
+<body id="uma-coluna" class="contato">
+    <!-- Início cabeçalho -->
+    <header>
+        <section class="barra-nav">
+            <img class="logo-reciclamais" src="/img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
+        </section>
 
-            <!--  CABEÇALHO  -->
+        <!-- Início barra navegação -->
+        <nav class="barra-nav">
+            <ul id="navegacao">
+                <li>
+                    <a id="home" href="/Telas/Index.html">Início</a>
+                </li>
+                <li>
+                    <a id="todasNoticias" href="/Telas/TodasNoticias.html">Notícias</a>
+                </li>
+                <li>
+                    <a id="agendamento" href="/Telas/AgendamentoLogin/agendamentologin.html">Agendamento</a>
+                </li>
+                <li>
+                    <a id="portalTransparencia" href="/Telas/PortalTransparencia.html">Portal de Transparência</a>
+                </li>
+                <li>
+                    <a id="contato" href="/Telas/Contato/contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fim barra navegação -->
 
-                <header class="mainHeader">
-                        <div class="logo">
-                            <a href="/Telas/Index.html">
-                                <img class="cabecalho" src="/img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
-                            </a>
-                        </div>
+        <section class="barra-nav">
+            <img class="login" src="/img/LayoutPadrao/imagem-usuario.png">
+        </section>
+    </header>
+    <!-- Fim cabeçalho -->
 
-                        <!-- Menu navegação -->
-                        <nav>
-                            <ul class="cabecalho">
-                                <li>
-                                    <a id="home" href="/Telas/Index.html">Início</a>
-                                </li>
-                                <li>
-                                    <a id="todasNoticias" href="/Telas/TodasNoticias.html">Notícias</a>
-                                </li>
-                                <li>
-                                    <a id="agendamento" href="/Telas/AgendamentoLogin/agendamentologin.html">Agendamento</a>
-                                </li>
-                                <li>
-                                    <a id="portalTransparencia" href="/Telas/PortalTransparencia.html">Portal de Transparência</a>
-                                </li>
-                                <li>
-                                    <a id="contato" href="/Telas/Contato/contato.html">Contato</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    
-                        <!-- Login -->
-                        <div class="login">
-                            <a href="/Telas/LoginCadastro/Login.html">
-                                <img class="cabecalho" src="/img/LayoutPadrao/imagem-usuario.png">
-                            </a>
-                        </div>
-                </header>
-                
-            <!--  FIM DO CABEÇALHO  -->
+    <main id="container">
+        <div id="conteudo">
 
+            <!-- Início primário -->
+            <div id="primario">
                 <main class="mainMain">
                     <h1>Dúvidas Frequentes</h1>
                     <div class=separador></div>                      
@@ -121,19 +119,40 @@
                     <br><br>
                     <img src="/img/Contato/fale-conosco2.png" alt="" height= 100px>
                 </aside>
+            </div>
+            <!-- Fim primário -->
 
+        </div>
+    </main>
+    <div class="clear"></div>
 
-            <!-- RODAPÉ-->    
-                <footer class="mainFooter">
-                    <div class="redes-sociais">
-                        <img class="prefeitura-logo" src="../LayoutPadrao/PrefeituraBH.png" alt="Prefeitura de BH">
-                        <img class="links-redes-sociais" src="../LayoutPadrao/redes-sociais.png" alt="Redes Sociais" height= 60px>
-                        <img class="fale-conosco" src="../LayoutPadrao/fale-conosco.png" alt="Fale Conosco">
-                    </div>
-                </footer>
-                
+    <!-- Início rodapé -->
+    <footer id="rodape">
+        <section class="prefeitura-logo">
+            <img src="/img/layoutpadrao/prefeiturabh.png" alt="instagram">
         </section>
+        <section class="redes-sociais">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="/img/layoutpadrao/instagram.png" alt="x">
+            </a>
+            <a href="https://twitter.com/?lang=pt" target="_blank">
+                <img src="/img/layoutpadrao/x.png" alt="x">
+            </a>
+            <a href="https://www.youtube.com/?gl=br" target="_blank">
+                <img src="/img/layoutpadrao/youtube.png" alt="youtube">
+            </a>
+            <p>
+                Copyright  ©2023 - ReciclaMais
+            </p>
+        </section>
+        <section class="fale-conosco">
+            <a href="">
+                <img src="/img/LayoutPadrao/fale-conosco.png" alt="Fale Conosco">
+            </a>
+        </section>
+    </footer>
 
-<script src="/Telas/DuvidaFrequente/duvida.js"></script>
+    <script src="/Telas/DuvidaFrequente/duvida.js"></script>
 </body>
+
 </html>
