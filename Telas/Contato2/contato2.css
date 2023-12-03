@@ -1,0 +1,271 @@
+/* CONTEÚDO DO GRID */
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main main main" "content aside aside aside" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainMain {
+    grid-area: main;
+}
+
+.mainContet {
+    grid-area: content;
+}
+
+.mainAside {
+    grid-area: aside;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f0f8f0; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
+    height: 60px;
+    width: 100%;
+}
+
+body {
+    background-color: #f0f8f0;
+}
+
+.barra-nav {
+    float: left;
+}
+
+.logo-reciclamais {
+    float: left;
+    width: 190px;
+    /* border: 1px solid red; */
+}
+
+nav {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 1090px;
+    float: left;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 0.9em;
+    display: block;
+    padding: 5px 40px;
+    line-height: 46px;
+    color: #222222;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+}
+
+body.home #navegacao a#home,
+body.todasNoticias #navegacao a#todasNoticias,
+body.agendamento #navegacao a#agendamento,
+body.portalTransparencia #navegacao a#portalTransparencia,
+body.contato #navegacao a#contato {
+    color: #8bd218;
+    cursor: text;
+}
+
+.login {
+    float: left;
+    width: 60px;
+}
+
+.mainFooter {
+    clear: both;
+    padding: 20px;
+    height: 60px;
+    width: auto;
+    background-color: #bff090;
+    /* border: 1px solid red; */
+}
+
+.mainFooter .prefeitura-logo {
+    float: left;
+    margin: auto 0px auto 60px;
+}
+
+.mainFooter .prefeitura-logo img {
+    float: left;
+    width: 200px;
+}
+
+.mainFooter .redes-sociais {
+    float: left;
+    width: 200px;
+    margin: 0px 0px 0px 300px;
+}
+
+.mainFooter .redes-sociais a {
+    float: left;
+    margin: 5px 16px;
+}
+
+.mainFooter .redes-sociais a img {
+    float: left;
+    width: 30px;
+}
+
+.mainFooter .redes-sociais p {
+    float: left;
+    display: block;
+    font-size: 0.8em;
+    margin: 10px auto;
+}
+
+.mainFooter .fale-conosco {
+    float: left;
+    margin: 0px 0px 0px 420px;
+}
+
+.mainFooter .fale-conosco img {
+    height: 70px;
+    float: left;
+}
+/* FIM LAYOUT PADRÃO */
+
+.mainMain {
+    display: block;
+    height: 100px;
+    margin: 50px 200px;
+    background-color: #bff090;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.mainMain > h1 {
+    padding-top: 20px;
+}
+
+.mainContent {
+    display: block;
+    text-align: center;
+}
+
+.mainContent > img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    border-radius: 10px;
+}
+
+.mainContent > h1 {
+    background: #bff090;
+    width: 150px;
+    height: 50px;
+    float: center;
+    padding: 10px;
+    border-radius: 10px;
+    bottom: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 60%;
+}
+
+.mainContent > h1:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
+
+.mainContent >h1 > a {
+    text-decoration: none;
+    color: black; 
+}
+
+.mainAside {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 550px;
+    min-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.botao {
+    border-radius: 15px;
+    border-color: darkgrey;
+    width: 35rem;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b6b6b6;
+    color: #111111;
+    margin-top: 15px;
+}
+
+.botao-1 {
+    border-radius: 15px;
+    border-color: darkgrey;
+    width: 35rem;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b6b6b6;
+    color: #111111;
+    margin-top: 15px;
+}
+
+textarea {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 36rem;
+}
+
+.mainAside > h1 {
+    text-align: left;
+    color: #111111;
+}
+
+.botao-2 {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 0.8mm #628A4C;
+    background-color: #756de6e0;
+    margin: 15px;
+    margin-left: 78%;
+}
+
