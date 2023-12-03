@@ -1,0 +1,319 @@
+/* Layout Página */
+
+* { padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif;}
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "content aside aside aside" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainContet {
+    grid-area: content;
+}
+
+.mainAside {
+    grid-area: aside;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/* FIM DO TESTE */
+
+/* CABEÇALHO */
+
+.logo {
+    float: left;
+    width: 15%;
+}
+
+.cabecalho{
+    height: 60px;
+}
+
+nav {
+    float: left;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f0;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin: 10px 30px 10px 30px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    color: #222222;
+    background-color: #f0f8f0;
+    text-decoration: none;
+    font-size: 1.02em;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+    border-bottom: 3px solid #8bd218;
+}
+
+.login {
+    width: 5%;
+    float: right;
+}
+
+main {
+    clear: both;
+    padding: 30px;
+}
+
+/* FIM DO CABEÇALHO */
+
+/* INÍCIO DO RODAPÉ */
+
+.rodape {
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #bff090;
+    margin-top: auto;
+    bottom: 0; /* Posicione o rodapé no fundo */
+    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
+}
+.prefeitura-logo {
+    width: 20rem;
+}
+  
+.fale-conosco {
+    width: 8%;
+    height: 6%;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+}
+.links-redes-sociais {
+    height: 60px;
+}
+ 
+.redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background: #bff090;
+}
+
+/* FIM DO RODAPÉ */
+
+.foto-usuario {
+    display: flex;
+    justify-content: left;
+    width: 250px;
+    height: auto;
+    background-color: #628A4C;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 15px auto;
+    margin-top: 50px;
+}
+
+.foto-usuario > h3 {
+    background-color: #628A4C;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    height: 30px; 
+    color: #effaef;
+    margin-top: 15px;
+}
+
+.foto-usuario > img {
+    display: block;
+    background-color: #628A4C;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;;
+}
+
+.lista {
+    display: block;
+    border: 1px solid #66a743;
+    width: 200px;
+    height: 30px;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+.lista > p {
+    color: #628A4C;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.solicitar {
+    display: flex;
+    background-color: #76993D;
+    width: 200px;
+    height: 28px;
+    margin: 15px auto;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.solicitar > p {
+    color: #effaef;
+    justify-content: center;
+    margin-left: 0;
+    align-items: center;
+    padding: 5px;
+}
+
+.botao-dados-cadastrais, 
+.botao-duvidas-frequentes,
+.botao-fale-conosco {
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin: 15px auto;    
+    max-width: 250px;
+    padding: 8px;
+    background-color: #76993D;
+    border-radius: 5px;
+}
+
+.botao-dados-cadastrais > p, 
+.botao-duvidas-frequentes > p,
+.botao-fale-conosco > p {
+    background-color: #76993D;
+    color: #effaef;
+}
+
+.botao-dados-cadastrais > img, 
+.botao-duvidas-frequentes > img,
+.botao-fale-conosco > img,
+.solicitar > img {
+    background-color: #76993D;
+    margin: 0 15px 0 10px;
+}
+
+.botao-duvidas-frequentes:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.5mm #628A4C;
+}
+
+.botao-duvidas-frequentes > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.botao-fale-conosco:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.5mm #628A4C;
+}
+
+.botao-fale-conosco > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.botao-dados-cadastrais:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.5mm #628A4C;
+}
+
+.botao-dados-cadastrais > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* FIM DO CONTENT */
+
+h1 {
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.separador {
+    margin: 10px 0;    
+    background-color: #425f32;
+    height: 4px;
+    max-width: 800px;
+}
+
+.botao-nome-solicitante {
+    border-radius: 15px;
+    border-color: darkgrey;
+    width: 20rem;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b6b6b6;
+    color: #111111;
+    margin-top: 10px;
+}
+
+.botao-dados-representante {
+    border-radius: 15px;
+    border-color: darkgrey;
+    width: 20rem;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #b6b6b6;
+    color: #111111;
+    margin-top: 7px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.separador {
+    margin: 10px 0;    
+    background-color: #425f32;
+    height: 4px;
+    max-width: 800px;
+}
+
+h4 {
+    display: inline;
+    float: right;
+    margin-right: 130px;
+    font-size: 20px;
+    background-color: darkgray;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h3 {
+    display: inline;
+    float: right;
+    margin-right: 130px;
+    font-size: 20px;
+    background-color: darkgray;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+.opcoes {
+    float: left;
+}
