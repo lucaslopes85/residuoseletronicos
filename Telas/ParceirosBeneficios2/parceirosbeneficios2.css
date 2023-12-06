@@ -3,26 +3,16 @@
 #main {
     display: grid;
     grid-template-rows: auto;
-    grid-template-areas: "header header header header" "content content content content" "footer footer footer footer";
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
 }
 
 .mainHeader {
     grid-area: header;
 }
 
-/* .mainMain {
+.mainMain {
     grid-area: main;
-    background-color: red;
-} */
-
-.mainContet {
-    grid-area: content;
 }
-
-/* .mainAside {
-    grid-area: aside;
-    background-color: yellow;
-} */
 
 .mainFooter {
     grid-area: footer;
@@ -164,79 +154,68 @@ body.contato #navegacao a#contato {
 }
 /* FIM LAYOUT PADRÃO */
 
-/* INÍCIO CONTEÚDO */
+/* Botão Parceiros */
 
-.box-title {
-    padding: 5px 10px 5px;
-    color: #222222;
-    background-color: #f0f8f0;
-    text-align: center;
+.parceiros {
     display: block;
-}
-
-.box-title > h1 {
-    max-width: 500px;
-    min-height: 30px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+    padding: 10px;
+    background-color: #414BB2;
+    width: 200px;
+    height: auto;
+    text-align: center;
     border-radius: 10px;
-    color: black;
-    font-size: 250%;
-    background-color: #0ca73d;
+    margin-left: 10%;
+    margin-top: 30px;
+    color: white;
 }
 
-.email {
-    font-family: Arial, Helvetica, sans-serif;
+/* Cards dos Parceiros e descontos */
+
+.cards-parceiros {
+    display: center;
+    align-self: center;
+    justify-items: center;
+    margin-left: 10%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.iptu,
+.ifood,
+.dotz,
+.supbh {
+    display: inline-block;
+    align-self: center;
+    padding: 30px;
     text-align: center;
-    max-width: 550px;
-    min-height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
+    background-color: #BFF090;
+    border-radius: 10px;
+    margin-right: 40px;
+    font-size: large;
+    margin-bottom: 30px;
 }
 
-.botao {
-    border-radius: 15px;
-    border-color: darkgrey;
-    width: 20rem;
-    height: 40px;
-    padding-left: 15px;
-    background-color: #b6b6b6;
-    color: #111111;
-    margin-top: 15px;
+.iptu:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
 }
 
-.botao-1 {
-    border-radius: 15px;
-    border-color: darkgrey;
-    width: 20rem;
-    height: 40px;
-    padding-left: 15px;
-    background-color: #b6b6b6;
-    color: #111111;
-    margin-top: 15px;
+.ifood:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
 }
 
-.botao-2 {
-    cursor: pointer;
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: #0ca73d;
-    margin: 15px;
+.dotz:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
 }
 
-.link {
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 250px;
-    min-height: 60px;
-    margin-left: 40%;
-    margin-right: auto;
-    font-size: 7px;
-    padding: 15px;
-    text-align: center;
-} 
+.supbh:hover {
+    transition-duration: 0.3s;
+    scale: 1.1;
+    border: solid 0.8mm #628A4C;
+}
 

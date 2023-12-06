@@ -1,115 +1,157 @@
+/* CONTEÚDO DO GRID */
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainMain {
+    grid-area: main;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
 /* FORMATAÇÃO PADRÃO */
 * {
     margin: 0px;
+    padding: 0px;
     /* background-color: #f0f8f0; */
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.border {
+    border: 1px solid black;
 }
 
 /* LAYOUT PADRÃO */
 header {
     float: left;
-    width: 15%;
+    height: 60px;
+    width: 100%;
 }
 
-.cabecalho{
-    height: 60px;
+body {
+    background-color: #f0f8f0;
+}
+
+.barra-nav {
+    float: left;
+}
+
+.logo-reciclamais {
+    float: left;
+    width: 190px;
+    /* border: 1px solid red; */
 }
 
 nav {
-    float: left;
-    width: 80%;
+    height: 60px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    background-color: #f0f8f0;
+    width: 1090px;
+    float: left;
 }
 
 nav ul li {
-    display: block;
     float: left;
-    margin: 10px 30px 10px 30px;
 }
 
 nav ul li a {
+    font-size: 0.9em;
     display: block;
-    padding: 8px;
+    padding: 5px 40px;
+    line-height: 46px;
     color: #222222;
-    background-color: #f0f8f0;
     text-decoration: none;
-    font-size: 1.02em;
 }
 
 nav ul li a:hover {
     color: #8bd218;
-    border-bottom: 3px solid #8bd218;
+}
+
+body.home #navegacao a#home,
+body.todasNoticias #navegacao a#todasNoticias,
+body.agendamento #navegacao a#agendamento,
+body.portalTransparencia #navegacao a#portalTransparencia,
+body.contato #navegacao a#contato {
+    color: #8bd218;
+    cursor: text;
 }
 
 .login {
-    width: 5%;
-    float: right;
-}
-
-main {
-    clear: both;
-    padding: 30px;
-}
-
-.rodape {
-    align-items: center;
-    padding: 0.7rem;
-    background-color: #bff090;
-    margin-top: auto;
-    bottom: 0; /* Posicione o rodapé no fundo */
-    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
-}
-.prefeitura-logo {
-    width: 20rem;
-}
-  
-.fale-conosco {
-    width: 8%;
-    height: 6%;
-    margin-top: 0.5rem;
-    margin-right: 2rem;
-}
-.links-redes-sociais {
-    height: 60px;
-}
- 
-.redes-sociais{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-}
-
-/* #rodape {
-    padding: 20px;
-    height: 100px;
-    background-color: #bff090;
-} */
-
-/* #rodape .prefeitura-logo {
-    width: 300px;
-    height: 90px;
     float: left;
-} */
+    width: 60px;
+}
 
-/* #rodape div {
-    display: inline;
+.mainFooter {
     clear: both;
-    margin: auto 350px;
-    width: 100%;
-} */
+    padding: 20px;
+    height: 60px;
+    width: auto;
+    background-color: #bff090;
+    /* border: 1px solid red; */
+}
 
-/* #rodape .fale-conosco {
-    width: 100px;
-    justify-items: center;
-    float: right; */
+.mainFooter .prefeitura-logo {
+    float: left;
+    margin: auto 0px auto 60px;
+}
 
+.mainFooter .prefeitura-logo img {
+    float: left;
+    width: 200px;
+}
 
+.mainFooter .redes-sociais {
+    float: left;
+    width: 200px;
+    margin: 0px 0px 0px 300px;
+}
+
+.mainFooter .redes-sociais a {
+    float: left;
+    margin: 5px 16px;
+}
+
+.mainFooter .redes-sociais a img {
+    float: left;
+    width: 30px;
+}
+
+.mainFooter .redes-sociais p {
+    float: left;
+    display: block;
+    font-size: 0.8em;
+    margin: 10px auto;
+}
+
+.mainFooter .fale-conosco {
+    float: left;
+    margin: 0px 0px 0px 420px;
+}
+
+.mainFooter .fale-conosco img {
+    height: 70px;
+    float: left;
+}
 /* FIM LAYOUT PADRÃO */
 
 .foto-usuario {
@@ -120,6 +162,8 @@ main {
     background-color: #628A4C;
     border-radius: 30px;
     padding: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 .foto-usuario > h3 {
@@ -247,26 +291,4 @@ main {
     padding: 5px;
 }
 
-/* .computador:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.8mm #628A4C;
-}
 
-.celular:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.8mm #628A4C;
-}
-
-.tablet:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.8mm #628A4C;
-}
-
-.notebook:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.8mm #628A4C;
-} */

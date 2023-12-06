@@ -4,12 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/Telas/AgendamentoLogin2/agendamentologin2.css">
-        <title>Agendamento</title>
+        <link rel="stylesheet" type="text/css" href="/Telas/NovaSolicitacaoServidor2/novasolicitacao2.css">
+        <title>Nova Solicitação Servidor</title>
     </head>
 
     <body>
-        
         <section id="main">
         
         <!-- Início cabeçalho -->
@@ -46,30 +45,64 @@
         </header>
         <!-- Fim cabeçalho -->
 
-        
-        <content class="mainContet">
-            <div class="box-title">
-                <h1>AGENDE SUA COLETA</h1>
-                <h2>Entre com sua conta para acessar nossa agenda</h2>
+        <content class="mainContent">
+            <div class="foto-usuario">
+                <img src="/icons/icone_usuario_claro.png" alt="" height= 80px>
+                <h3>[nome do usuário]</h3>
             </div>
 
-            <div class="email">
-                <input class="botao" type="text" placeholder="Email">
-                <br><br>
-                <input class="botao-1" type="text" placeholder="Senha">
-                <br><br>
-                <button class="botao-2">Entrar</button>
+            <div class="lista">
+                <p>Lista de itens para doação</p>
             </div>
-            
-            <div class="link">
-                <h1><a href="/Telas/LoginCadastro/Cadastro.html">Ainda nao possuo uma conta</a></h1>
-                <br><br>
-                <h1><a href="/Telas/LoginCadastro/Login.html">Esqueci minha senha</a></h1>
+
+            <div class="solicitar">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p>Solicitar Doação</p>
+            </div>
+
+            <div class="botao-dados-cadastrais">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/LoginCadastro/Cadastro.html">Seus Dados</a></p>
+            </div>
+
+            <div class="botao-duvidas-frequentes">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/DuvidaFrequente/duvida.html">Dúvidas Frequentes</a></p>
+            </div>
+
+            <div class="botao-fale-conosco">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/Contato2/contato2.html">Fale Conosco</a></p>
             </div>
         </content>
 
-       
 
+            <aside class="mainAside">
+
+                <h1>Dados do Solicitante</h1>
+                <div class="separador"></div>
+
+                <div class="nome-solicitante">
+                    <input class="botao-nome-solicitante" type="text" placeholder="Nome da Instituição">
+                    <br></br>
+                    <input class="botao-dados-representante" type="text" placeholder="Dados do Representante">
+                </div>
+
+                <h2>Dados do Solicitante</h2>
+                <div class="separador"></div>
+
+                <h3>Quantidade</h3>
+                <h4>Itens</h4>
+                <br></br>
+                <div class="opcoes">
+                    <img src="/img/Solicitacao/computador.png" alt="" height="70px">
+                    <p>Computador</p>
+                    <select name="Itens" id=""></select>
+
+                </div>
+
+
+            </aside>
 
         <!-- Início rodapé -->
         <footer class="mainFooter">
@@ -96,6 +129,7 @@
                 </a>
             </section>
         </footer>
+
     </section> 
     </body>
 

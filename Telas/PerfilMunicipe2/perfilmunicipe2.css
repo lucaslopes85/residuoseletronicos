@@ -1,0 +1,386 @@
+/* CONTEÚDO DO GRID */
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "content aside aside aside" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainContet {
+    grid-area: content;
+}
+
+.mainAside {
+    grid-area: aside;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f0f8f0; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
+    height: 60px;
+    width: 100%;
+}
+
+body {
+    background-color: #f0f8f0;
+}
+
+.barra-nav {
+    float: left;
+    background-color: none;
+}
+
+.logo-reciclamais {
+    float: left;
+    width: 190px;
+    /* border: 1px solid red; */
+}
+
+nav {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 1090px;
+    float: left;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 0.9em;
+    display: block;
+    padding: 5px 40px;
+    line-height: 46px;
+    color: #222222;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+}
+
+body.home #navegacao a#home,
+body.todasNoticias #navegacao a#todasNoticias,
+body.agendamento #navegacao a#agendamento,
+body.portalTransparencia #navegacao a#portalTransparencia,
+body.contato #navegacao a#contato {
+    color: #8bd218;
+    cursor: text;
+}
+
+.login {
+    float: left;
+    width: 60px;
+}
+
+.mainFooter {
+    clear: both;
+    padding: 20px;
+    height: 60px;
+    width: auto;
+    background-color: #bff090;
+    /* border: 1px solid red; */
+}
+
+.mainFooter .prefeitura-logo {
+    float: left;
+    margin: auto 0px auto 60px;
+}
+
+.mainFooter .prefeitura-logo img {
+    float: left;
+    width: 200px;
+}
+
+.mainFooter .redes-sociais {
+    float: left;
+    width: 200px;
+    margin: 0px 0px 0px 300px;
+}
+
+.mainFooter .redes-sociais a {
+    float: left;
+    margin: 5px 16px;
+}
+
+.mainFooter .redes-sociais a img {
+    float: left;
+    width: 30px;
+}
+
+.mainFooter .redes-sociais p {
+    float: left;
+    display: block;
+    font-size: 0.8em;
+    margin: 10px auto;
+}
+
+.mainFooter .fale-conosco {
+    float: left;
+    margin: 0px 0px 0px 420px;
+}
+
+.mainFooter .fale-conosco img {
+    height: 70px;
+    float: left;
+}
+/* FIM LAYOUT PADRÃO */
+
+/* Perfil Munícipe */
+
+/* .container-municipe {
+        height: auto;
+        width: auto;
+        margin: 0 50px;
+        border: none;
+} */
+
+/* .container-perfil-municipe { 
+    display: grid;
+    grid-area: "container";
+    grid-template-areas: 
+        "aside main main main";
+    justify-content: left;
+    margin: 25px;
+} */
+
+.container-agendamentos {
+    border: 1px solid red;
+}
+
+    /* Parte superior */
+
+.foto-usuario {
+    display: flex;
+    align-items: center;
+    background-color: #425f32;
+    border-radius: 30px;
+    max-height: 150px;
+    max-width: 250px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.foto-usuario > h3 {
+    background-color: #425f32;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    height: 30px; 
+    color: #effaef;
+    margin-top: 15px;
+}
+
+.foto-usuario > img {
+    display: block;
+    background-color: #425f32;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;;
+}
+
+
+    /* Card com pontuação atual */
+
+.card-pontuacao {
+    background-color:#76993D;
+    border-radius: 40px 0 40px 0;
+    margin: 15px auto;
+    padding: 10px;
+    max-height: 150px;
+    max-width: 250px;
+}
+
+.card-pontuacao > h4, h2 {
+    text-align: center;
+    display: flex;
+    background-color:#76993D;
+    justify-content: center;
+    color: #effaef;
+    border-radius: 40px 0 40px 0;
+}
+
+    /* Botão para extrato de pontos */
+
+.botao-extrato-pontos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;    
+    max-width: 180px;
+    padding: 5px;
+    border: 2px solid #76993D;
+    border-radius: 5px;
+}
+
+    /* Botão para troca de pontos */
+
+.botao-troca-pontos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px auto;    
+    max-width: 180px;
+    padding: 8px;
+    background-color: #425f32;
+    border-radius: 5px;
+}
+
+.botao-troca-pontos > p {
+    background-color: #425f32;
+    color: #effaef;
+
+}
+
+.botao-troca-pontos > img {
+    background-color: #425f32;
+}
+
+.botao-troca-pontos a {
+    text-decoration: none;
+    color: #effaef;
+}
+
+
+    /* Botões para alteração de dados cadastrais, dúvidas frequentes e página de contatos */
+
+.botao-dados-cadastrais, 
+.botao-duvidas-frequentes,
+.botao-fale-conosco {
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin: 15px auto;    
+    max-width: 250px;
+    padding: 8px;
+    background-color: #76993D;
+    border-radius: 5px;
+}
+
+.botao-dados-cadastrais > p, 
+.botao-duvidas-frequentes > p,
+.botao-fale-conosco > p {
+    background-color: #76993D;
+    color: #effaef;
+}
+
+.botao-dados-cadastrais > img, 
+.botao-duvidas-frequentes > img,
+.botao-fale-conosco > img {
+    background-color: #76993D;
+    margin: 0 15px 0 10px;
+}
+
+.botao-dados-cadastrais,
+.botao-duvidas-frequentes,
+.botao-fale-conosco, a {
+    text-decoration: none;
+    color: #effaef;
+}
+
+    /* Botão para novo agendamento */
+
+
+.botao-novo-agendamento {
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    margin: 15px auto;    
+    max-width: 300px;
+    padding: 8px;
+    background-color: #76993D;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.botao-novo-agendamento > p {
+    background-color: #76993D;
+    color: #effaef;
+}
+
+.botao-novo-agendamento > img {
+    background-color: #76993D;
+    margin: 0 15px 0 10px;
+}
+
+    /* Tabelas de próximos agendamentos */
+
+.tabela-proximo-agendamento table {
+    border: none;
+    width: 95%;
+}
+
+.tabela-proximo-agendamento th {
+    background-color:#76993D;
+}
+
+.tabela-proximo-agendamento td, ul, li {
+    text-align: start !important;
+    font-size: 15px !important;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+/* .tabela-proximo-agendamento td, ul, li { 
+    background-color: #E0F2B6;
+} */
+
+.container-municipe h4 {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+    /* Tabelas de agendamentos anteriores */
+
+.tabela-agendamentos-anteriores table {
+    border: none;
+    width: 95%;
+    
+}
+    
+.tabela-agendamentos-anteriores th {
+    background-color:#999999;
+}
+    
+.tabela-agendamentos-anteriores td,
+.tabela-agendamentos-anteriores ul,
+.tabela-agendamentos-anteriores li {
+    background-color: #ededed;
+}    
+
+

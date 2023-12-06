@@ -1,6 +1,4 @@
-/* Layout Página */
-
-* { padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif;}
+/* CONTEÚDO DO GRID */
 
 #main {
     display: grid;
@@ -14,106 +12,152 @@
 
 .mainContet {
     grid-area: content;
-    background: blue;
 }
 
 .mainAside {
     grid-area: aside;
+    width: 100%;
 }
 
 .mainFooter {
     grid-area: footer;
 }
 
-/* FIM DO TESTE */
-
-/* CABEÇALHO */
-
-.logo {
-    float: left;
-    width: 15%;
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f0f8f0; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.cabecalho{
+.fleft {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
     height: 60px;
+    width: 100%;
+}
+
+body {
+    background-color: #f0f8f0;
+}
+
+.barra-nav {
+    float: left;
+}
+
+.logo-reciclamais {
+    float: left;
+    width: 190px;
+    /* border: 1px solid red; */
 }
 
 nav {
-    float: left;
-    width: 80%;
+    height: 60px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    background-color: #f0f8f0;
+    width: 1090px;
+    float: left;
 }
 
 nav ul li {
-    display: block;
     float: left;
-    margin: 10px 30px 10px 30px;
 }
 
 nav ul li a {
+    font-size: 0.9em;
     display: block;
-    padding: 8px;
+    padding: 5px 40px;
+    line-height: 46px;
     color: #222222;
-    background-color: #f0f8f0;
     text-decoration: none;
-    font-size: 1.02em;
 }
 
 nav ul li a:hover {
     color: #8bd218;
-    border-bottom: 3px solid #8bd218;
+}
+
+body.home #navegacao a#home,
+body.todasNoticias #navegacao a#todasNoticias,
+body.agendamento #navegacao a#agendamento,
+body.portalTransparencia #navegacao a#portalTransparencia,
+body.contato #navegacao a#contato {
+    color: #8bd218;
+    cursor: text;
 }
 
 .login {
-    width: 5%;
-    float: right;
+    float: left;
+    width: 60px;
 }
 
-main {
+.mainFooter {
     clear: both;
-    padding: 30px;
-}
-
-/* FIM DO CABEÇALHO */
-
-/* INÍCIO DO RODAPÉ */
-
-.rodape {
-    align-items: center;
-    padding: 0.7rem;
-    background-color: #bff090;
-    margin-top: auto;
-    bottom: 0; /* Posicione o rodapé no fundo */
-    width: 100%; /* Garanta que o rodapé ocupe a largura total da página */
-}
-.prefeitura-logo {
-    width: 20rem;
-}
-  
-.fale-conosco {
-    width: 8%;
-    height: 6%;
-    margin-top: 0.5rem;
-    margin-right: 2rem;
-}
-.links-redes-sociais {
+    padding: 20px;
     height: 60px;
-}
- 
-.redes-sociais{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    background: #bff090;
+    width: auto;
+    background-color: #bff090;
+    /* border: 1px solid red; */
 }
 
-/* FIM DO RODAPÉ */
+.mainFooter .prefeitura-logo {
+    float: left;
+    margin: auto 0px auto 60px;
+}
+
+.mainFooter .prefeitura-logo img {
+    float: left;
+    width: 200px;
+}
+
+.mainFooter .redes-sociais {
+    float: left;
+    width: 200px;
+    margin: 0px 0px 0px 300px;
+}
+
+.mainFooter .redes-sociais a {
+    float: left;
+    margin: 5px 16px;
+}
+
+.mainFooter .redes-sociais a img {
+    float: left;
+    width: 30px;
+}
+
+.mainFooter .redes-sociais p {
+    float: left;
+    display: block;
+    font-size: 0.8em;
+    margin: 10px auto;
+}
+
+.mainFooter .fale-conosco {
+    float: left;
+    margin: 0px 0px 0px 420px;
+}
+
+.mainFooter .fale-conosco img {
+    height: 70px;
+    float: left;
+}
+/* FIM LAYOUT PADRÃO */
 
 .foto-usuario {
     display: flex;
@@ -225,6 +269,11 @@ main {
 }
 
 .nova-solicitacao > i {
+    color: #effaef;
+}
+
+.nova-solicitacao a {
+    text-decoration: none;
     color: #effaef;
 }
 
@@ -354,3 +403,4 @@ ul {
     text-decoration: none;
     color: white;
 }
+
