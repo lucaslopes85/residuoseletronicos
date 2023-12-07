@@ -127,7 +127,7 @@ main {
     color: #111111;
     margin-top: 15px;
 }
-.entar input{
+.entrar {
     cursor: pointer;
     width: 120px;
     height: 40px;
@@ -135,6 +135,7 @@ main {
     border: none;
     background-color: #0CA73D;
     margin: 15px;
+
 }
 h1{
     border-radius:  15px;
@@ -181,4 +182,19 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     
+}
+.cadastro-entrar{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0CA73D;
+    margin: 15px;
+  
+}
+.menor-das-menores{
+    
+    flex-direction: column;
+    justify-content: flex-end;
 }
