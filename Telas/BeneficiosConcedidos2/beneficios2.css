@@ -43,6 +43,11 @@ header {
     float: left;
     height: 60px;
     width: 100%;
+    background-color: #f0f8f0;
+}
+
+.legislacao {
+    background-color: #f0f8f0;
 }
 
 body {
@@ -104,7 +109,7 @@ body.contato #navegacao a#contato {
 .mainFooter {
     clear: both;
     padding: 20px;
-    height: 60px;
+    height: 100px;
     width: auto;
     background-color: #bff090;
     /* border: 1px solid red; */
