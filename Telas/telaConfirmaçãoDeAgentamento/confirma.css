@@ -173,5 +173,25 @@ main {
 label{
     margin-top: 0.5rem;
 }
-
+.reagendar{
+    background-color:  #f56c51;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 15px;
+}
+.confirmar{
+    background-color:  #24AF50;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin: 80px;
+    text-align: center;
+  
+   
+}
 
