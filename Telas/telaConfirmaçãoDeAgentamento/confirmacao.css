@@ -1,0 +1,262 @@
+/* CONTEÚDO DO GRID */
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainMain {
+    grid-area: main;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f0f8f0; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
+    height: 60px;
+    width: 100%;
+}
+
+body {
+    background-color: #f0f8f0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.barra-nav {
+    float: left;
+}
+
+.logo-reciclamais {
+    float: left;
+    width: 190px;
+    /* border: 1px solid red; */
+}
+
+nav {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 1090px;
+    float: left;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 0.9em;
+    display: block;
+    padding: 5px 40px;
+    line-height: 46px;
+    color: #222222;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+}
+
+body.home #navegacao a#home,
+body.todasNoticias #navegacao a#todasNoticias,
+body.agendamento #navegacao a#agendamento,
+body.portalTransparencia #navegacao a#portalTransparencia,
+body.contato #navegacao a#contato {
+    color: #8bd218;
+    cursor: text;
+}
+
+.login {
+    float: left;
+    width: 60px;
+}
+
+.mainFooter {
+    clear: both;
+    padding: 20px;
+    height: 60px;
+    width: auto;
+    background-color: #bff090;
+    /* border: 1px solid red; */
+}
+
+.mainFooter .prefeitura-logo {
+    float: left;
+    margin: auto 0px auto 60px;
+}
+
+.mainFooter .prefeitura-logo img {
+    float: left;
+    width: 200px;
+}
+
+.mainFooter .redes-sociais {
+    float: left;
+    width: 200px;
+    margin: 0px 0px 0px 300px;
+}
+
+.mainFooter .redes-sociais a {
+    float: left;
+    margin: 5px 16px;
+}
+
+.mainFooter .redes-sociais a img {
+    float: left;
+    width: 30px;
+}
+
+.mainFooter .redes-sociais p {
+    float: left;
+    display: block;
+    font-size: 0.8em;
+    margin: 10px auto;
+}
+
+.mainFooter .fale-conosco {
+    float: left;
+    margin: 0px 0px 0px 420px;
+}
+
+.mainFooter .fale-conosco img {
+    height: 70px;
+    float: left;
+}
+/* FIM LAYOUT PADRÃO */
+
+.records{
+    width: 80%;
+    user-select: none;
+    text-align: center;
+    margin-left: 150px;
+   
+}
+.records th{
+    height: 50px;
+    background-color: #14bd9b;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+.records td{
+    height: 50px;
+    padding-left: 20px;
+    
+}
+.records th:last-child
+.records td:last-child{
+    padding: 0;
+    min-width: 100px;
+   
+}
+.records tr :hover{
+    background-color: #e6e6e6;
+   
+}
+#confirmar h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 33px;
+}
+.Confirme{
+    display: flex;
+    padding-left: 12%;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+}
+
+.caixa{
+    display: flex;
+    padding-left: 12%;
+}
+
+.maior{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Nome{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    height: 2rem;
+    justify-content: space-between;
+}
+
+.cadastro-nome{
+    margin-right: 0.5rem;
+}
+.email{
+    display: flex;
+    justify-content: flex-start;
+}
+.input-cadastro{
+    width: 74%;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+label{
+    margin-top: 0.5rem;
+}
+.reagendar{
+    background-color:  #f56c51;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 15px;
+}
+.confirmar{
+    background-color:  #24AF50;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin: 80px;
+    text-align: center;
+}
+
+
+
+
