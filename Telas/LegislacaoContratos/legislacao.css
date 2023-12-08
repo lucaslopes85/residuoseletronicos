@@ -1,0 +1,260 @@
+/* CONTEÚDO DO GRID */
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainMain {
+    grid-area: main;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f0f8f0; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
+    height: 60px;
+    width: 100%;
+}
+
+body {
+    background-color: #f0f8f0;
+}
+
+.barra-nav {
+    float: left;
+}
+
+.logo-reciclamais {
+    float: left;
+    width: 190px;
+    /* border: 1px solid red; */
+}
+
+nav {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 1090px;
+    float: left;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 0.9em;
+    display: block;
+    padding: 5px 40px;
+    line-height: 46px;
+    color: #222222;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+}
+
+body.home #navegacao a#home,
+body.todasNoticias #navegacao a#todasNoticias,
+body.agendamento #navegacao a#agendamento,
+body.portalTransparencia #navegacao a#portalTransparencia,
+body.contato #navegacao a#contato {
+    color: #8bd218;
+    cursor: text;
+}
+
+.login {
+    float: left;
+    width: 60px;
+}
+
+.mainFooter {
+    clear: both;
+    padding: 20px;
+    height: 60px;
+    width: auto;
+    background-color: #bff090;
+    /* border: 1px solid red; */
+}
+
+.mainFooter .prefeitura-logo {
+    float: left;
+    margin: auto 0px auto 60px;
+}
+
+.mainFooter .prefeitura-logo img {
+    float: left;
+    width: 200px;
+}
+
+.mainFooter .redes-sociais {
+    float: left;
+    width: 200px;
+    margin: 0px 0px 0px 300px;
+}
+
+.mainFooter .redes-sociais a {
+    float: left;
+    margin: 5px 16px;
+}
+
+.mainFooter .redes-sociais a img {
+    float: left;
+    width: 30px;
+}
+
+.mainFooter .redes-sociais p {
+    float: left;
+    display: block;
+    font-size: 0.8em;
+    margin: 10px auto;
+}
+
+.mainFooter .fale-conosco {
+    float: left;
+    margin: 0px 0px 0px 420px;
+}
+
+.mainFooter .fale-conosco img {
+    height: 70px;
+    float: left;
+}
+/* FIM LAYOUT PADRÃO */
+
+/*Legislação e contratos*/
+
+.button {
+    display: flex;
+    align-items: baseline;
+}
+
+.botao {
+    background-color: #425f32;
+    border: none;
+    color: #effaef;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px #628A4C;
+    padding: 5px;
+    width: 90px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.botao:hover {
+    scale: 1.1;
+}
+.container-legislacao, .container-contratos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    gap: 30px
+}
+
+.separador {
+    margin: 10px 25px 10px;    
+    background-color: #425f32;
+    height: 4px;
+}
+
+.container-main-legislacao > h4, .container-main-contratos > h4 {
+    color:#425f32;
+    font-weight: 700;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.card-item-legislacao, .card-item-contratos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    text-align: center;
+    background-color: #E0F2B6;
+    width: 300px;
+    height: 280px;
+    justify-content: space-around;
+    border-radius: 40px 0 40px 0;
+    padding: 0 0 25px 0;
+    margin-left: 70px;
+}
+
+.card-item-legislacao > p, .card-item-contratos > p {
+    background-color:#E0F2B6;
+}
+
+.card-item-legislacao-titulo, .card-item-contratos-titulo {
+    display: flex;
+    background-color: #425f32;
+    padding: 15px;
+    width: 300px;
+    min-height: 86px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 0 0 0;
+    color: #effaef;
+    margin-bottom: 25px;
+}
+
+.card-item-legislacao-titulo > h5, .card-item-contratos-titulo > h5 {
+    background-color: #425f32;
+    font-size: 20px;
+}
+
+.box-title {
+    padding: 5px 10px 5px;
+    color: #222222;
+    background-color: #f0f8f0;
+    text-align: center;
+    display: block;
+}
+
+.box-title > h1 {
+    background-color: #425f32;
+    max-width: 500px;
+    min-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: #effaef;
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gap {
+    height: 40px;
+}
+
