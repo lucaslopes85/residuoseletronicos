@@ -6,6 +6,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #effaef;
+}
+
 .fleft {
     float: left;
 }
@@ -71,7 +76,7 @@ body.home #navegacao a#home,
 body.todasNoticias #navegacao a#todasNoticias,
 body.agendamento #navegacao a#agendamento,
 body.portalTransparencia #navegacao a#portalTransparencia,
-body.contato #navegacao a#contato {
+body.contato #navegacao a#contato{
     color: #8bd218;
     cursor: text;
 }
@@ -436,8 +441,79 @@ body.contato #navegacao a#contato {
 
 /* Fim Formatação detalhe noticia */
 
-
 /* Fim Formatação caixa de noticia resumida */
+
+/* Início formatação telas de dados */
+#primario .caixa .titulo-dados{
+    border-radius: 0;
+    color: #425f32;
+    background-color: transparent;
+    justify-content: left;
+}
+
+#primario .caixa hr{
+    color: red;
+    height: 2px;
+    background-color: #425f32;
+}
+
+#primario .caixa .lista-dados {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container-botoes-dados {
+    width: 70%;
+    float: right;
+}
+
+#primario .caixa .botao-alterar {
+    color: white;
+    background-color: #425f32;
+    padding: 8px 10px;
+    width: 150px;
+    display: block;
+    margin: 8px 0;
+    border-radius: 3px;
+    border: none;
+}
+
+#primario .caixa .botao-confirmar {
+    color: white;
+    background-color: #76993d;
+    padding: 8px 10px;
+    width: 150px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: none;
+}
+
+#primario .caixa .botao-exluir {
+    color: white;
+    background-color: #da0063;
+    padding: 8px 10px;
+    width: 150px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: none;
+}
+
+#primario .caixa .botao-adicionar {
+    color: white;
+    background-color: #425f32;
+    padding: 8px 10px;
+    width: 150px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: none;
+}
+
+
+
+/* Fim formatação telas de dados */
 
 
 .box-title {
