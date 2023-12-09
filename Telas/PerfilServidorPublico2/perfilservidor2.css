@@ -326,6 +326,11 @@ h2 {
     margin-top: 5px;
 }
 
+h2 > a {
+    text-decoration: none;
+    color: #111111;
+}
+
 h3 {
     font-size: 18px;
     margin-left: 30px;

@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/Telas/PerfilServidorPublico2/perfilservidor2.css">
-        <title>Perfil Servidor Público</title>
+        <link rel="stylesheet" type="text/css" href="/Telas/AlterarSolicitacao/alterarsolicitacao.css">
+        <title>Alterar Data da Solicitação</title>
     </head>
 
     <body>
@@ -79,76 +79,73 @@
         </content>
 
         <aside class="mainAside">
-            <div class="nova-solicitacao">
-            <i class="fa-solid fa-plus"></i>
-            <p><a href="/Telas/NovaSolicitacaoServidor2/novasolicitacao2.html">Nova Solicitação</a></p>
-            </div>
 
-            <h1>Solicitação Atual</h1>
-            <div class="separador"></div>
-            <div class="tabela-solicitacao-atual">
-                <table>
-                    <tr>
-                        <th>Dia da Solicitação</th>
-                        <th>Itens Solicitados</th>
-                        <th>Situação</th>
-                        <th>Ver Detalhes</th>
-                    </tr>
-                    <tr>
-                        <td>21/07/2023</td>
-                        <td>
-                            <ul>
-                                <li>10 Computadores Desktop</li>
-                                <li>10 Mouses</li>
-                                <li>10 Teclados</li>
-                            </ul>
-                        </td>
-                        <td>EM ANÁLISE</td>
-                        <td>ícone</td>
-                    </tr>
-                </table>
-            </div>
+            <h1>Dados do Solicitante</h1>
+                <div class="separador"></div>
 
-            <h2><a href="/Telas/AlterarSolicitacao/alterarsolicitacao.html">Alterar Solicitação</a></h2>
-            
-            <h3>Históricos de Solicitações</h3>
-            <div class="separador"></div>
-            <div class="tabela-historico-solicitacao">
-                <table>
-                    <tr>
-                        <th>Dia da Solicitação</th>
-                        <th>Itens Solicitados</th>
-                        <th>Situação</th>
-                        <th>Ver Detalhes</th>
-                    </tr>
-                    <tr>
-                        <td>05/03/2022</td>
-                        <td>
-                            <ul>
-                                <li>10 Computadores Desktop</li>
-                                <li>10 Mouses</li>
-                                <li>10 Teclados</li>
-                            </ul>
-                        </td>
-                        <td>APROVADA</td>
-                        <td>ícone</td>
-                    </tr>
-                    <tr>
-                        <td>04/07/2021</td>
-                        <td>
-                            <ul>
-                                <li>25 Tablets</li>
-                            </ul>
-                        </td>
-                        <td>REPROVADA
-                        <td>ícone</td>
-                    </tr>
-                </table>
+                <div class="nome-solicitante">
+                    <input class="botao-nome-solicitante" type="text" placeholder="Nome da Instituição">
+                    <br></br>
+                    <input class="botao-dados-representante" type="text" placeholder="Dados do Representante">
+                </div>
 
-                <h4>Ver todas as solicitações</h4>
+                <h2>Data da Solicitação</h2>
+                <div class="separador"></div>
+                <input id="date" type="date" value="2023-10-01" />
 
-            </div>
+                <h3>Itens Solicitados</h3>
+                <div class="separador"></div>
+                
+                <div class="opcoes">
+
+                    <label class="selecao" for="itens">Computador</label>
+                    <select class="qtd" name="qtd" id="select">
+                        <option value="" selected>Selecione</option>
+                        <option value="um">1</option>
+                        <option value="dois">2</option>
+                        <option value="tres">3</option>
+                    </select>
+                </div>
+
+                <div class="opcoes-1">
+
+                    <label class="selecao-1" for="itens">Notebook</label>
+                    <select class="qtd-1" name="qtd" id="select">
+                        <option value="" selected>Selecione</option>
+                        <option value="um">1</option>
+                        <option value="dois">2</option>
+                        <option value="tres">3</option>
+                    </select>
+                </div>
+
+                <div class="opcoes-2">
+
+                    <label class="selecao-2" for="itens">Tablet</label>
+                    <select class="qtd-2" name="qtd" id="select">
+                        <option value="" selected>Selecione</option>
+                        <option value="um">1</option>
+                        <option value="dois">2</option>
+                        <option value="tres">3</option>
+                    </select>
+                </div>
+
+                <div class="opcoes-2">
+
+                    <label class="selecao-2" for="itens">Celular</label>
+                    <select class="qtd-3" name="qtd" id="select">
+                        <option value="" selected>Selecione</option>
+                        <option value="um">1</option>
+                        <option value="dois">2</option>
+                        <option value="tres">3</option>
+                    </select>
+                </div>
+
+                <div class="botao-enviar">
+                    <p><a href="">Enviar Solicitação</a></p>
+                </div>
+
         </aside>
+
                 
 
        

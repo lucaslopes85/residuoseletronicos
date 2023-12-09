@@ -3,26 +3,22 @@
 #main {
     display: grid;
     grid-template-rows: auto;
-    grid-template-areas: "header header header header" "content content content content" "footer footer footer footer";
+    grid-template-areas: "header header header header" "content content aside aside" "footer footer footer footer";
 }
 
 .mainHeader {
     grid-area: header;
 }
 
-/* .mainMain {
-    grid-area: main;
-    background-color: red;
-} */
-
 .mainContet {
     grid-area: content;
+    background: blue;
 }
 
-/* .mainAside {
+.mainAside {
     grid-area: aside;
     background-color: yellow;
-} */
+}
 
 .mainFooter {
     grid-area: footer;
@@ -164,84 +160,5 @@ body.contato #navegacao a#contato {
 }
 /* FIM LAYOUT PADRÃO */
 
-/* INÍCIO CONTEÚDO */
 
-.box-title {
-    padding: 5px 10px 5px;
-    color: #222222;
-    background-color: #f0f8f0;
-    text-align: center;
-    display: block;
-}
-
-.box-title > h1 {
-    max-width: 500px;
-    min-height: 30px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    color: black;
-    font-size: 250%;
-    background-color: #0ca73d;
-}
-
-.email {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    max-width: 550px;
-    min-height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-}
-
-.botao {
-    border-radius: 15px;
-    border-color: darkgrey;
-    width: 20rem;
-    height: 40px;
-    padding-left: 15px;
-    background-color: #b6b6b6;
-    color: #111111;
-    margin-top: 15px;
-}
-
-.botao-1 {
-    border-radius: 15px;
-    border-color: darkgrey;
-    width: 20rem;
-    height: 40px;
-    padding-left: 15px;
-    background-color: #b6b6b6;
-    color: #111111;
-    margin-top: 15px;
-}
-
-.botao-2 {
-    cursor: pointer;
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: #0ca73d;
-    margin: 15px;
-}
-
-.botao-2 > a {
-    text-decoration: none;
-    color: #111111;
-}
-
-.link {
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 250px;
-    min-height: 60px;
-    margin-left: 40%;
-    margin-right: auto;
-    font-size: 7px;
-    padding: 15px;
-    text-align: center;
-} 
 
