@@ -333,7 +333,7 @@ h2 {
 h4 {
     display: inline;
     float: right;
-    margin-right: 130px;
+    margin-right: 150px;
     font-size: 20px;
     background-color: darkgray;
     width: 150px;
@@ -346,7 +346,7 @@ h4 {
 h3 {
     display: inline;
     float: right;
-    margin-right: 130px;
+    margin-right: 250px;
     font-size: 20px;
     background-color: darkgray;
     width: 150px;
@@ -356,9 +356,58 @@ h3 {
     padding: 5px;
 }
 
-
-
 .opcoes {
-    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
 }
 
+.selecao {
+    display: inline;
+    float: right;
+    margin-right: 140px;
+}
+
+.qtd {
+    margin-left: 220px;
+}
+
+.selecao-1 {
+    display: inline;
+    float: left;
+    margin-right: 150px;
+}
+
+.qtd-1 {
+    margin-left: 330px;
+}
+
+.opcoes-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.selecao-2 {
+    display: inline;
+    float: left;
+    margin-right: 150px;
+}
+
+.qtd-2 {
+    margin-left: 355px;
+}
+
+.opcoes-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.qtd-3 {
+    margin-left: 370px;
+}
