@@ -4,8 +4,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/Telas/TelaReferencia/referencia.css">
-        <title>Tela Referência</title>
+        <link rel="stylesheet" type="text/css" href="/Telas/AlterarSolicitacao/alterarsolicitacao.css">
+        <title>Alterar Data da Solicitação</title>
     </head>
 
     <body>
@@ -40,16 +40,111 @@
             <!-- Fim barra navegação -->
     
             <section class="barra-nav">
-                <img class="login" src="/img/LayoutPadrao/imagem-usuario.png">
+                <a id="login" href="/Telas/LoginCadastro/Login.html">
+                    <img class="login" src="/img/LayoutPadrao/imagem-usuario.png">
+                </a>
             </section>
         </header>
         <!-- Fim cabeçalho -->
 
-        <main class="mainMain">Main</main>
+        <content class="mainContent">
+            <div class="foto-usuario">
+                <img src="/icons/icone_usuario_claro.png" alt="" height= 80px>
+                <h3>[nome do usuário]</h3>
+            </div>
 
-        <content class="mainContet">Content</content>
+            <div class="lista">
+                <p>Lista de itens para doação</p>
+            </div>
 
-        <aside class="mainAside">Aside</aside>
+            <div class="solicitar">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p>Solicitar Doação</p>
+            </div>
+
+            <div class="botao-dados-cadastrais">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/LoginCadastro/Cadastro.html">Seus Dados</a></p>
+            </div>
+
+            <div class="botao-duvidas-frequentes">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/DuvidaFrequente/duvida.html">Dúvidas Frequentes</a></p>
+            </div>
+
+            <div class="botao-fale-conosco">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/Contato2/contato2.html">Fale Conosco</a></p>
+            </div>
+        </content>
+
+        <aside class="mainAside">
+
+            <h1>Dados do Solicitante</h1>
+                <div class="separador"></div>
+
+                <div class="nome-solicitante">
+                    <input class="botao-nome-solicitante" type="text" placeholder="Nome da Instituição">
+                    <br></br>
+                    <input class="botao-dados-representante" type="text" placeholder="Dados do Representante">
+                </div>
+
+                <h2>Data da Solicitação</h2>
+                <div class="separador"></div>
+                <input id="date" type="date" value="2023-10-01" />
+
+                <h3>Itens Solicitados</h3>
+                <div class="separador"></div>
+                
+                <div class="opcoes">
+
+                    <label class="selecao" for="itens">Computador</label>
+                    <select class="qtd" name="qtd" id="select">
+                        <option value="" selected>Selecione</option>
+                        <option value="um">1</option>
+                        <option value="dois">2</option>
+                        <option value="tres">3</option>
+                    </select>
+                </div>
+
+                <div class="opcoes-1">
+
+                    <label class="selecao-1" for="itens">Notebook</label>
+                    <select class="qtd-1" name="qtd" id="select">
+                        <option value="" selected>Selecione</option>
+                        <option value="um">1</option>
+                        <option value="dois">2</option>
+                        <option value="tres">3</option>
+                    </select>
+                </div>
+
+                <div class="opcoes-2">
+
+                    <label class="selecao-2" for="itens">Tablet</label>
+                    <select class="qtd-2" name="qtd" id="select">
+                        <option value="" selected>Selecione</option>
+                        <option value="um">1</option>
+                        <option value="dois">2</option>
+                        <option value="tres">3</option>
+                    </select>
+                </div>
+
+                <div class="opcoes-2">
+
+                    <label class="selecao-2" for="itens">Celular</label>
+                    <select class="qtd-3" name="qtd" id="select">
+                        <option value="" selected>Selecione</option>
+                        <option value="um">1</option>
+                        <option value="dois">2</option>
+                        <option value="tres">3</option>
+                    </select>
+                </div>
+
+                <div class="botao-enviar">
+                    <p><a href="">Enviar Solicitação</a></p>
+                </div>
+
+        </aside>
 
                 
 
