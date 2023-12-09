@@ -159,7 +159,7 @@ body.contato #navegacao a#contato {
 /* FIM LAYOUT PADRÃO */
 
 .foto-usuario {
-    display: flex;
+    /* display: flex;
     justify-content: left;
     width: 250px;
     height: auto;
@@ -167,22 +167,32 @@ body.contato #navegacao a#contato {
     border-radius: 30px;
     padding: 10px;
     margin: 15px auto;
-    margin-top: 50px;
+    margin-top: 50px; */
+    display: flex;
+    align-items: center;
+    background-color: #425f32;
+    border-radius: 30px;
+    max-height: 150px;
+    max-width: 250px;
+    margin: 15px auto;
+    padding: 10px;
 }
 
 .foto-usuario > h3 {
-    background-color: #628A4C;
+    background-color: #425f32;
     border-radius: 0 0 30px 30px;
     display: flex;
     justify-content: center;
     height: 30px; 
     color: #effaef;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    align-items: center;
+    min-width: 150px;
 }
 
 .foto-usuario > img {
     display: block;
-    background-color: #628A4C;
+    background-color: #425f32;
     border-radius: 0 0 30px 30px;
     margin: 0 auto;;
 }
@@ -410,4 +420,21 @@ h3 {
 
 .qtd-3 {
     margin-left: 370px;
+}
+
+.botao-enviar {
+    display: inline;
+    float: right;
+    margin-right: 230px;
+    padding: 20px;
+    width:150px;
+    background-color: #76993D;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.botao-enviar > p > a {
+    text-decoration: none;
+    color: #effaef;
 }
