@@ -510,10 +510,157 @@ body.contato #navegacao a#contato{
     border-radius: 3px;
     border: none;
 }
-
-
-
 /* Fim formatação telas de dados */
+
+/* Formatação do campo de data */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: black;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid black;
+    border-radius: 3px;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    margin: 20px 20px;
+    width: 200px;
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+/* Fim formatação campo de data */
+
+/* Formatação do campo de hora */
+input[type="time"]::-webkit-clear-button {
+    display: none;
+}
+
+input[type="time"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+input[type="time"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: black;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid black;
+    border-radius: 3px;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    margin: 20px 20px;
+    width: 150px;
+}
+
+input[type="time"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+/* Fim formatação campo de hora */
+
+/* Formatação do campo de itens */
+select::-webkit-clear-button {
+    display: none;
+}
+
+select::-webkit-inner-spin-button { 
+    display: none;
+}
+
+select::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    color: black;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid black;
+    border-radius: 3px;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    margin: 20px 20px;
+    width: 165px;
+}
+
+select, focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+/* Fim formatação campo de itens */
+
+/* Formatação do campo de endereços */
+.enderecos::-webkit-clear-button {
+    display: none;
+}
+
+.enderecos::-webkit-inner-spin-button { 
+    display: none;
+}
+
+.enderecos::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+.enderecos {
+    appearance: none;
+    -webkit-appearance: none;
+    color: black;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid black;
+    border-radius: 3px;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    margin: 20px 20px;
+    width: 400px;
+    
+}
+
+.enderecos, focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+/* Fim formatação campo de endereços */
+
 
 
 .box-title {

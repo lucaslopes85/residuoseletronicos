@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+
+        <title>Alteração Agendamento</title>
+    </head>
+
+    <body id="duas-colunas" class="home">
+        
+        <!-- Início cabeçalho -->
+        <header>
+            <section class="barra-nav">
+                <img class="logo-reciclamais" src="../img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
+            </section>
+
+            <!-- Início barra navegação -->
+            <nav class="barra-nav">
+                <ul id="navegacao">
+                    <li>
+                        <a id="home" href="/Telas/Index.html">Início</a>
+                    </li>
+                    <li>
+                        <a id="todasNoticias" href="/Telas/TodasNoticias.html">Notícias</a>
+                    </li>
+                    <li>
+                        <a id="agendamento" href="/Telas/AgendamentoLogin2/agendamentologin2.html">Agendamento</a>
+                    </li>
+                    <li>
+                        <a id="portalTransparencia" href="/Telas/PortalTransparencia.html">Portal de Transparência</a>
+                    </li>
+                    <li>
+                        <a id="contato" href="/Telas/Contato2/contato2.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fim barra navegação -->
+    
+            <section class="barra-nav">
+                <img class="login" src="../img/LayoutPadrao/imagem-usuario.png">
+            </section>
+        </header>
+        <!-- Fim cabeçalho -->
+
+        <!-- Início container -->
+        <main id="container">
+            <div id="conteudo">
+
+                <!-- Início primário -->
+                <div id="primario">
+                    <div class="caixa">
+                        <h2 class="titulo-dados">Dia</h2>
+                        <hr>
+                        <input type="date" id="dia" name="dia">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="caixa">
+                        <h2 class="titulo-dados">Horário</h2>
+                        <hr>
+                        <input type="time" id="startTime" />
+                    </div>
+                    <div class="caixa">
+                        <h2 class="titulo-dados">Itens</h2>
+                        <hr>
+                        <select name="Itens" id="itens">
+                            <option value="default">- - - - - - - - - -</option>
+                            <option value="computador">Computador</option>
+                            <option value="smartphone">Smartphone</option>
+                            <option value="notebook">Notebook</option>
+                            <option value="pilha">Pilha</option>
+                          </select>
+
+                          <div class="container-botoes-dados">
+                            <input class="botao-exluir" type="button" value="Exluir">
+                            <input class="botao-adicionar" type="button" value="Adicionar item">
+                        </div>
+                    </div>
+                    <div class="caixa">
+                        <h2 class="titulo-dados">Endereço</h2>
+                        <hr>
+                        <input class="enderecos" type="text" id="endereco" name="endereco">
+                        <input class="botao-confirmar" type="button" value="Salvar Alterações">
+                    </div>
+
+                    
+                </div>
+                <!-- Fim primário -->
+
+                <!-- Início lateral -->
+                <div id="lateral">
+                    <div class="foto-usuario">
+                        <img src="/icons/icone_usuario_claro.png" alt="" height= 80px>
+                        <h3>[nome do usuário]</h3>
+                    </div>
+                    <div class="card-pontuacao">
+                        <h4>Você tem</h4><br><h2>5.000</h2><br><h4>pontos acumulados</h4>
+                    </div>
+                    <div class="botao-extrato-pontos">
+                        <p><a href="*"></a>Ver extrato de pontos</p>
+                        <img src="/icons/icone-extrato.png" alt="" height= 25px>
+                    </div>
+                    <div class="botao-troca-pontos">
+                        <img src="/icons/icone_setas_troca_claro.png" alt="" height= 25px>
+                        <p><a href="/Telas/ParceirosBeneficios2/parceirosbeneficios2.html">Troque seus pontos</a></p>
+                    </div>
+                    <div class="botao-dados-cadastrais">
+                        <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                        <p><a href="/Telas/DadosPessoais.html">Seus Dados</a></p>
+                    </div>
+                    <div class="botao-duvidas-frequentes">
+                        <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                        <p><a href="/Telas/DuvidaFrequente/duvida.html">Dúvidas Frequentes</a></p>
+                    </div>
+                    <div class="botao-fale-conosco">
+                        <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                        <p><a href="/Telas/Contato2/contato2.html">Fale Conosco</a></p>
+                    </div>
+                    
+                </div>
+                <!-- Fim lateral -->
+
+            </div>
+        </main>
+        <!-- Fim container -->
+
+        <!-- Início rodapé -->
+        <footer id="rodape">
+            <section class="prefeitura-logo">
+                <img src="../img/layoutpadrao/prefeiturabh.png" alt="instagram">
+            </section>
+            <section class="redes-sociais">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../img/layoutpadrao/instagram.png" alt="x">
+                </a>
+                <a href="https://twitter.com/?lang=pt" target="_blank">
+                    <img src="../img/layoutpadrao/x.png" alt="x">
+                </a>
+                <a href="https://www.youtube.com/?gl=br" target="_blank">
+                    <img src="../img/layoutpadrao/youtube.png" alt="youtube">
+                </a>
+                <p>
+                    Copyright  ©2023 - ReciclaMais
+                </p>
+            </section>
+            <section class="fale-conosco">
+                <a href="">
+                    <img src="../img/layoutpadrao/fale-conosco.png" alt="instagram">
+                </a>
+            </section>
+        </footer>
+
+        
+    </body>
+
+</html>
