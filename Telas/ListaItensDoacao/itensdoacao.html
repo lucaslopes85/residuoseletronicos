@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/Telas/TelaReferencia/referencia.css">
+        <link rel="stylesheet" type="text/css" href="/Telas/ListaItensDoacao/itensdoacao.css">
         <title>Itens para Doação</title>
     </head>
 
@@ -48,9 +48,155 @@
         <!-- Fim cabeçalho -->
 
 
-        <content class="mainContet">Content</content>
+        <content class="mainContent">
+            <div class="foto-usuario">
+                <img src="/icons/icone_usuario_claro.png" alt="" height= 80px>
+                <h3>[nome do usuário]</h3>
+            </div>
 
-        <aside class="mainAside">Aside</aside>
+            <div class="lista">
+                <p>Lista de itens para doação</p>
+            </div>
+
+            <div class="solicitar">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p>Solicitar Doação</p>
+            </div>
+
+            <div class="botao-dados-cadastrais">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/LoginCadastro/Cadastro.html">Seus Dados</a></p>
+            </div>
+
+            <div class="botao-duvidas-frequentes">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/DuvidaFrequente/duvida.html">Dúvidas Frequentes</a></p>
+            </div>
+
+            <div class="botao-fale-conosco">
+                <img src="/icons/icone_dados_cadastrais_claro.png" alt="" height= 25px>
+                <p><a href="/Telas/Contato2/contato2.html">Fale Conosco</a></p>
+            </div>
+        </content>
+
+        <aside class="mainAside">
+            
+            <h1>Itens disponíveis para Doação</h1>
+                <div class="separador"></div>
+
+                <div class="filtrar">
+                        <select class="filtro" name="Itens" id="select">
+                                <option value="" selected>Filtrar</option>
+                                <option value="computador">Computador</option>
+                                <option value="notebook">Notebook</option>
+                                <option value="tablet">tablet</option>
+                                <option value="celular">Celular</option>
+                                <option value="tablet">Tela</option>
+                                <option value="notebook">Teclado</option>
+                                <option value="computador">Mouse</option>
+                        </select>
+                    
+                        <button class="exportar">Exportar</button>
+                </div>
+
+                <div class="relatorio">
+                    <table>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Estado</th>
+                            <th>Informações Adicionais</th>
+                            <th>Quantidade</th>
+                        </tr>
+                        <tr>
+                            <td>Notebook</td>
+                            <td>Lenovo</td>
+                            <td>Ideapad</td>
+                            <td>Ótimo</td>
+                            <td>Core i5; memória 8GB; armazenamento 1TB</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                            <td>Samsung</td>
+                            <td>Tab S6 Lite</td>
+                            <td>Bom</td>
+                            <td>4GB RAM; 64GB; Câmera traseira 8MP Câmera frontal 5MP; Android 13</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </div>
+
+            <div class="solicitar">
+                <h2>Exibir Todos</h2>
+            </div>
+
+        </aside>
 
                 
 
