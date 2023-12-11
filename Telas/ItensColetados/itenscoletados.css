@@ -259,6 +259,10 @@ h3 {
     margin-left: 515px;
 }
 
+.qtd-4 {
+    margin-left: 470px;
+}
+
 .botao-enviar {
     display: inline;
     float: right;
@@ -274,4 +278,8 @@ h3 {
 .botao-enviar > p > a {
     text-decoration: none;
     color: #111;
+}
+
+#pilha {
+    height: 190px;
 }

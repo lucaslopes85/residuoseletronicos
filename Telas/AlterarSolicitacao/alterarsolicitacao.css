@@ -233,6 +233,11 @@ body.contato #navegacao a#contato {
     padding: 5px;
 }
 
+.solicitar > p > a {
+    text-decoration: none;
+    color: #effaef;
+}
+
 .botao-dados-cadastrais, 
 .botao-duvidas-frequentes,
 .botao-fale-conosco {
