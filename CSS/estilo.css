@@ -15,6 +15,10 @@ a {
     float: left;
 }
 
+.fright {
+    float: right;
+}
+
 .clear {
     clear: both;
 }
@@ -661,7 +665,68 @@ select, focus {
 }
 /* Fim formatação campo de endereços */
 
+/* Início Formatação Extrato pontos */
+.container-extrato {
+    padding: 20px;
+}
 
+#primario .tabela-extrato {
+    width: 100%;
+}
+
+#primario .filtro-extrato {
+    padding: 10px 0px;
+    width: 100%;
+}
+
+#primario .filtro-extrato #filtro {
+    padding: 0px;
+    width: 200px;
+    font-size: 1.2em;
+    height: 25px;
+    margin: 0px;
+}
+
+#primario .filtro-extrato #submit-filtro {
+    padding: 0px;
+    height: 35px;
+    float: right;
+    margin: 0px;
+    font-size: 0.8em;
+}
+
+#primario .tabela-extrato th {
+    background-color: #425f32;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+}  
+
+#primario .tabela-extrato td {
+    background-color:#e0f2b6;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+#primario .botao-extrato-completo {
+    padding: 10px;
+    float: right;
+    margin: 10px 0px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid #425f32;
+    border-radius: 5px;
+}
+
+/* Fim Formatação Extrato pontos */
 
 .box-title {
     padding: 5px 10px 5px;
