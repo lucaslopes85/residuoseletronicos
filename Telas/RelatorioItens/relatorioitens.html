@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/Telas/RelatorioItens/relatorioitens.css">
+        <title>Relatório Detalhado</title>
+    </head>
+
+    <body>
+        <section id="main">
+        
+        <!-- Início cabeçalho -->
+        <header class="mainHeader">
+            <section class="barra-nav">
+                <img class="logo-reciclamais" src="/img/LayoutPadrao/logo-reciclamais.png" title="Reciclamais">
+            </section>
+
+            <!-- Início barra navegação -->
+            <nav class="barra-nav">
+                <ul id="navegacao">
+                    <li>
+                        <a id="home" href="/Telas/Index.html">Início</a>
+                    </li>
+                    <li>
+                        <a id="todasNoticias" href="/Telas/TodasNoticias.html">Notícias</a>
+                    </li>
+                    <li>
+                        <a id="agendamento" href="/Telas/AgendamentoLogin2/agendamentologin2.html">Agendamento</a>
+                    </li>
+                    <li>
+                        <a id="portalTransparencia" href="/Telas/PortalTransparencia.html">Portal de Transparência</a>
+                    </li>
+                    <li>
+                        <a id="contato" href="/Telas/Contato2/contato2.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fim barra navegação -->
+    
+            <section class="barra-nav">
+                <a id="login" href="/Telas/LoginCadastro/Login.html">
+                    <img class="login" src="/img/LayoutPadrao/imagem-usuario.png">
+                </a>
+            </section>
+        </header>
+        <!-- Fim cabeçalho -->
+
+        <content class="mainContet">
+            <div class="foto-usuario">
+                <img src="/icons/icone_usuario_claro.png" alt="" height= 80px>
+                <h3>[nome do usuário]</h3>
+            </div>
+        </content>
+
+        <aside class="mainAside">
+            
+            <h1>Itens Coletados</h1>
+                <div class="separador"></div>
+
+                <div class="filtrar">
+                        <select class="filtro" name="Itens" id="select">
+                                <option value="" selected>Filtrar</option>
+                                <option value="computador">Computador</option>
+                                <option value="notebook">Notebook</option>
+                                <option value="tablet">tablet</option>
+                                <option value="celular">Celular</option>
+                                <option value="tablet">Tela</option>
+                                <option value="notebook">Teclado</option>
+                                <option value="computador">Mouse</option>
+                        </select>
+                    
+                        <button class="exportar">Exportar</button>
+                </div>
+
+                <div class="relatorio">
+                    <table>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Estado</th>
+                            <th>Informações Adicionais</th>
+                            <th>Quantidade</th>
+                        </tr>
+                        <tr>
+                            <td>Notebook</td>
+                            <td>Lenovo</td>
+                            <td>Ideapad</td>
+                            <td>Ótimo</td>
+                            <td>Core i5; memória 8GB; armazenamento 1TB</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                            <td>Samsung</td>
+                            <td>Tab S6 Lite</td>
+                            <td>Bom</td>
+                            <td>4GB RAM; 64GB; Câmera traseira 8MP Câmera frontal 5MP; Android 13</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Mouse</td>
+                            <td>Logitech</td>
+                            <td>M 90</td>
+                            <td>Bom</td>
+                            <td>Óptico com fio</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </div>
+            
+        </aside>
+
+                
+
+       
+
+        <!-- Início rodapé -->
+        <footer class="mainFooter">
+            <section class="prefeitura-logo">
+                <img src="/img/layoutpadrao/prefeiturabh.png" alt="instagram">
+            </section>
+            <section class="redes-sociais">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="/img/layoutpadrao/instagram.png" alt="x">
+                </a>
+                <a href="https://twitter.com/?lang=pt" target="_blank">
+                    <img src="/img/layoutpadrao/x.png" alt="x">
+                </a>
+                <a href="https://www.youtube.com/?gl=br" target="_blank">
+                    <img src="/img/layoutpadrao/youtube.png" alt="youtube">
+                </a>
+                <p>
+                    Copyright  ©2023 - ReciclaMais
+                </p>
+            </section>
+            <section class="fale-conosco">
+                <a href="">
+                    <img src="/img/LayoutPadrao/fale-conosco.png" alt="Fale Conosco">
+                </a>
+            </section>
+        </footer>
+
+    </section> 
+    </body>
+
+</html>
