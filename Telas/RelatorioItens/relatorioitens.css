@@ -165,13 +165,12 @@ body.contato #navegacao a#contato {
     justify-content: left;
     width: 250px;
     height: auto;
-    margin-top: 50px;
     align-items: center;
     background-color: #425f32;
     border-radius: 30px;
     max-height: 150px;
     max-width: 250px;
-    margin: 15px auto;
+    margin: 55px auto;
     padding: 10px;
 }
 
@@ -193,103 +192,6 @@ body.contato #navegacao a#contato {
     border-radius: 0 0 30px 30px;
     margin: 0 auto;;
 }
-
-.lista {
-    display: block;
-    border: 1px solid #66a743;
-    width: 200px;
-    height: 30px;
-    margin: 15px auto;
-    padding: 5px;
-}
-
-.lista > p {
-    color: #628A4C;
-    text-align: center;
-    font-size: 14px;
-    padding-top: 5px;
-}
-
-.solicitar {
-    display: flex;
-    background-color: #76993D;
-    width: 200px;
-    height: 28px;
-    margin: 15px auto;
-    padding: 7px;
-    border-radius: 5px;
-}
-
-.solicitar > p {
-    color: #effaef;
-    justify-content: center;
-    margin-left: 0;
-    align-items: center;
-    padding: 5px;
-}
-
-.botao-dados-cadastrais, 
-.botao-duvidas-frequentes,
-.botao-fale-conosco {
-    display: flex;
-    justify-content: justify;
-    align-items: center;
-    margin: 15px auto;    
-    max-width: 250px;
-    padding: 8px;
-    background-color: #76993D;
-    border-radius: 5px;
-}
-
-.botao-dados-cadastrais > p, 
-.botao-duvidas-frequentes > p,
-.botao-fale-conosco > p {
-    background-color: #76993D;
-    color: #effaef;
-}
-
-.botao-dados-cadastrais > img, 
-.botao-duvidas-frequentes > img,
-.botao-fale-conosco > img,
-.solicitar > img {
-    background-color: #76993D;
-    margin: 0 15px 0 10px;
-}
-
-.botao-duvidas-frequentes:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.5mm #628A4C;
-}
-
-.botao-duvidas-frequentes > p > a {
-    text-decoration: none;
-    color: white;
-}
-
-.botao-fale-conosco:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.5mm #628A4C;
-}
-
-.botao-fale-conosco > p > a {
-    text-decoration: none;
-    color: white;
-}
-
-.botao-dados-cadastrais:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.5mm #628A4C;
-}
-
-.botao-dados-cadastrais > p > a {
-    text-decoration: none;
-    color: white;
-}
-
-/* FIM DO CONTENT */
 
 /* INICIO ASIDE */
 
@@ -354,11 +256,5 @@ h1 {
         list-style-position: inside;
     }
     
-    .solicitar > h2 {
-        color: #effaef;
-        align-items: center;
-        margin-left: 23px;
-        cursor: pointer;
-    }
 
-    
+

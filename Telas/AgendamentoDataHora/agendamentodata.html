@@ -4,12 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/Telas/AgendamentoLogin2/agendamentologin2.css">
-        <title>Agendamento</title>
+        <link rel="stylesheet" type="text/css" href="/Telas/AgendamentoDataHora/agendamentodata.css">
+        <title>Dias disponíveis de coleta</title>
     </head>
 
-    <body class="agendamento">
-        
+    <body>
         <section id="main">
         
         <!-- Início cabeçalho -->
@@ -48,30 +47,34 @@
         </header>
         <!-- Fim cabeçalho -->
 
-        
-        <content class="mainContet">
-            <div class="box-title">
-                <h1>AGENDE SUA COLETA</h1>
-                <h2>Entre com sua conta para acessar nossa agenda</h2>
+        <main class="mainMain">
+            <div class="endereco">
+                <h1>Endereço: R. Bernardo Guimarães, 2267, Lourdes - Belo Horizonte/MG, 30140-082</h1>
             </div>
+            <div class="dia-hora">
+                <h2>Selecione o dia e horário disponíveis</h2>
+            </div>
+        </main>
 
-            <div class="email">
-                <input class="botao" type="text" placeholder="Email">
-                <br><br>
-                <input class="botao-1" type="text" placeholder="Senha">
-                <br><br>
-                <button class="botao-2"><a href="/Telas/AgendamentoDataHora/agendamentodata.html">Entrar</a></button>
-            </div>
-            
-            <div class="link">
-                <h1><a href="/Telas/LoginCadastro/Cadastro.html">Ainda nao possuo uma conta</a></h1>
-                <br><br>
-                <h1><a href="/Telas/LoginCadastro/Login.html">Esqueci minha senha</a></h1>
+        <content class="mainContet">
+            <div class="dia">
+            <label id="data-cons" for="data-cons">Escolha o dia da coleta: </label> <br>
+            <input id="date" type="date" value="2023-10-01" />
             </div>
         </content>
 
-       
+        <aside class="mainAside">
+            <div class="hora">
+            <label class="hora-cons" for="hora-cons">Escolha o horário da coleta: </label> <br>
+            <input id="hora-cons" type="time" name="hora-cons" value="13:30" />
+            </div>
 
+            <h3><a href="/Telas/ItensColetados/itenscoletados.html">Próximo</a></h3>
+        </aside>
+
+                
+
+       
 
         <!-- Início rodapé -->
         <footer class="mainFooter">
@@ -98,6 +101,7 @@
                 </a>
             </section>
         </footer>
+
     </section> 
     </body>
 

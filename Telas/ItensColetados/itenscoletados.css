@@ -1,0 +1,285 @@
+/* CONTEÚDO DO GRID */
+
+#main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main main main" "content content content content" "footer footer footer footer";
+}
+
+.mainHeader {
+    grid-area: header;
+}
+
+.mainMain {
+    grid-area: main;
+}
+
+.mainContet {
+    grid-area: content;
+}
+
+.mainFooter {
+    grid-area: footer;
+}
+
+/* FORMATAÇÃO PADRÃO */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f0f8f0; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fleft {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/* LAYOUT PADRÃO */
+header {
+    float: left;
+    height: 60px;
+    width: 100%;
+}
+
+body {
+    background-color: #f0f8f0;
+}
+
+.barra-nav {
+    float: left;
+}
+
+.logo-reciclamais {
+    float: left;
+    width: 190px;
+    /* border: 1px solid red; */
+}
+
+nav {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 1090px;
+    float: left;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 0.9em;
+    display: block;
+    padding: 5px 40px;
+    line-height: 46px;
+    color: #222222;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #8bd218;
+}
+
+body.home #navegacao a#home,
+body.todasNoticias #navegacao a#todasNoticias,
+body.agendamento #navegacao a#agendamento,
+body.portalTransparencia #navegacao a#portalTransparencia,
+body.contato #navegacao a#contato {
+    color: #8bd218;
+    cursor: text;
+}
+
+.login {
+    float: left;
+    width: 60px;
+}
+
+.mainFooter {
+    clear: both;
+    padding: 20px;
+    height: 60px;
+    width: auto;
+    background-color: #bff090;
+    /* border: 1px solid red; */
+}
+
+.mainFooter .prefeitura-logo {
+    float: left;
+    margin: auto 0px auto 60px;
+}
+
+.mainFooter .prefeitura-logo img {
+    float: left;
+    width: 200px;
+}
+
+.mainFooter .redes-sociais {
+    float: left;
+    width: 200px;
+    margin: 0px 0px 0px 300px;
+}
+
+.mainFooter .redes-sociais a {
+    float: left;
+    margin: 5px 16px;
+}
+
+.mainFooter .redes-sociais a img {
+    float: left;
+    width: 30px;
+}
+
+.mainFooter .redes-sociais p {
+    float: left;
+    display: block;
+    font-size: 0.8em;
+    margin: 10px auto;
+}
+
+.mainFooter .fale-conosco {
+    float: left;
+    margin: 0px 0px 0px 420px;
+}
+
+.mainFooter .fale-conosco img {
+    height: 70px;
+    float: left;
+}
+/* FIM LAYOUT PADRÃO */
+
+/* INICIO MAIN */
+
+.dia-hora {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    background-color: #14bd9b;
+    padding: 15px;
+    width: 900px;
+    margin-left: 230px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    display: inline;
+    float: right;
+    margin-right: 150px;
+    font-size: 20px;
+    background-color: darkgray;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h3 {
+    display: inline;
+    float: right;
+    margin-right: 250px;
+    font-size: 20px;
+    background-color: darkgray;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-left: 350px;
+}
+
+.selecao {
+    display: inline;
+    float: right;
+}
+
+.itens {
+    margin-left: 130px;
+}
+
+.qtd {
+    margin-left: 220px;
+}
+
+.selecao-1 {
+    display: inline;
+    float: left;
+}
+
+.qtd-1 {
+    margin-left: 470px;
+}
+
+.opcoes-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+    margin-left: 350px;
+}
+
+.selecao-2 {
+    display: inline;
+    float: left;
+}
+
+.qtd-2 {
+    margin-left: 500px;
+}
+
+.opcoes-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+    margin-left: 350px;
+}
+
+.qtd-3 {
+    margin-left: 515px;
+}
+
+.qtd-4 {
+    margin-left: 470px;
+}
+
+.botao-enviar {
+    display: inline;
+    float: right;
+    margin-right: 230px;
+    padding: 20px;
+    width:150px;
+    background-color: #14bd9b;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.botao-enviar > p > a {
+    text-decoration: none;
+    color: #111;
+}
+
+#pilha {
+    height: 190px;
+}

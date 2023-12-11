@@ -213,6 +213,11 @@ body.contato #navegacao a#contato {
     padding-top: 5px;
 }
 
+.lista > p > a {
+    text-decoration: none;
+    color: #628A4C;
+}
+
 .solicitar {
     display: flex;
     background-color: #76993D;
@@ -229,6 +234,11 @@ body.contato #navegacao a#contato {
     margin-left: 0;
     align-items: center;
     padding: 5px;
+}
+
+.solicitar > p > a {
+    text-decoration: none;
+    color: #effaef;
 }
 
 .botao-dados-cadastrais, 

@@ -165,13 +165,12 @@ body.contato #navegacao a#contato {
     justify-content: left;
     width: 250px;
     height: auto;
-    margin-top: 50px;
     align-items: center;
     background-color: #425f32;
     border-radius: 30px;
     max-height: 150px;
     max-width: 250px;
-    margin: 15px auto;
+    margin: 55px auto;
     padding: 10px;
 }
 
@@ -194,171 +193,60 @@ body.contato #navegacao a#contato {
     margin: 0 auto;;
 }
 
-.lista {
-    display: block;
-    border: 1px solid #66a743;
-    width: 200px;
-    height: 30px;
-    margin: 15px auto;
-    padding: 5px;
-}
-
-.lista > p {
-    color: #628A4C;
-    text-align: center;
-    font-size: 14px;
-    padding-top: 5px;
-}
-
-.solicitar {
-    display: flex;
-    background-color: #76993D;
-    width: 200px;
-    height: 28px;
-    margin: 15px auto;
-    padding: 7px;
-    border-radius: 5px;
-}
-
-.solicitar > p {
-    color: #effaef;
-    justify-content: center;
-    margin-left: 0;
-    align-items: center;
-    padding: 5px;
-}
-
-.botao-dados-cadastrais, 
-.botao-duvidas-frequentes,
-.botao-fale-conosco {
-    display: flex;
-    justify-content: justify;
-    align-items: center;
-    margin: 15px auto;    
-    max-width: 250px;
-    padding: 8px;
-    background-color: #76993D;
-    border-radius: 5px;
-}
-
-.botao-dados-cadastrais > p, 
-.botao-duvidas-frequentes > p,
-.botao-fale-conosco > p {
-    background-color: #76993D;
-    color: #effaef;
-}
-
-.botao-dados-cadastrais > img, 
-.botao-duvidas-frequentes > img,
-.botao-fale-conosco > img,
-.solicitar > img {
-    background-color: #76993D;
-    margin: 0 15px 0 10px;
-}
-
-.botao-duvidas-frequentes:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.5mm #628A4C;
-}
-
-.botao-duvidas-frequentes > p > a {
-    text-decoration: none;
-    color: white;
-}
-
-.botao-fale-conosco:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.5mm #628A4C;
-}
-
-.botao-fale-conosco > p > a {
-    text-decoration: none;
-    color: white;
-}
-
-.botao-dados-cadastrais:hover {
-    transition-duration: 0.3s;
-    scale: 1.1;
-    border: solid 0.5mm #628A4C;
-}
-
-.botao-dados-cadastrais > p > a {
-    text-decoration: none;
-    color: white;
-}
-
-/* FIM DO CONTENT */
-
 /* INICIO ASIDE */
 
-h1 {
-    font-size: 18px;
-    margin-top: 50px;
-}
-
-.separador {
-    margin: 10px 0;    
-    background-color: #425f32;
-    height: 4px;
-    max-width: 965px;
-}
-
-.filtrar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 0;
-}
-
-.filtro {
-    width: 150px;
-    height: 25px;
-    background-color: rgb(202, 201, 201);
-    border-radius: 5px;
-}
-
-.exportar {
-    display: flex;
-    flex-direction: row;
-    margin-left: 700px;
-    padding: 5px 15px;
+.itens-coletados {
+    display: block;
+    width: 700px;
+    height: 30px;
+    margin-top: 70px;
     background-color: #76993D;
-    color: #effaef;
-    cursor: pointer;
+    padding: 7px;
+    align-items: center;
+    text-align: left;
+    border-radius: 7px;
 }
 
-    /* Tabelas de Relatório */
+.itens-coletados > p > a {
+    text-decoration: none;
+    color: #effaef;
+}
 
-    .relatorio table {
-        border: none;
-        width: 95%;
-        padding-bottom: 30px;
-    }
-    
-    .relatorio th {
-        background-color:#76993D;
-        height: 50px;
-        color: #effaef;
-    }
-    
-    .relatorio td {
-        text-align: start !important;
-        font-size: 15px !important;
-        background-color: #E0F2B6;
-        height: 40px;
-    }
-    
-    ul {
-        list-style-position: inside;
-    }
-    
-    .solicitar > h2 {
-        color: #effaef;
-        align-items: center;
-        margin-left: 23px;
-        cursor: pointer;
-    }
+.itens-coletados-1 {
+    display: block;
+    width: 700px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #76993D;
+    padding: 7px;
+    align-items: center;
+    text-align: left;
+    border-radius: 7px;
+}
 
-    
+.itens-coletados-1 > p > a {
+    text-decoration: none;
+    color: #effaef;
+}
+
+i {
+    margin: 0 25px;
+}
+
+.itens-coletados-2 {
+    display: block;
+    width: 700px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #76993D;
+    padding: 7px;
+    align-items: center;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 180px;
+}
+
+.itens-coletados-2 > p > a {
+    text-decoration: none;
+    color: #effaef;
+}

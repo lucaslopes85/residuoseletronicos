@@ -365,6 +365,25 @@ ul {
     margin-bottom: 10px;
 }
 
+h5 {
+    display: flex;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: #76993D;
+    float: right;
+    margin-right: 70px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+h5 > a {
+    text-decoration: none;
+    color: #111111;
+}
+
     /* Tabelas de agendamentos anteriores */
 
 .tabela-agendamentos-anteriores table {
