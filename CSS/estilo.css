@@ -255,8 +255,13 @@ body.contato #navegacao a#contato{
     text-align: center;
 }
 
+#lateral .link-todas-noticias {
+    color: black;
+}
+
 #lateral .leia-mais{
     float: right;
+    color: #000;
 }
 
 #lateral .caixa h2 {
